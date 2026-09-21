@@ -4,48 +4,46 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Instalaciones Contreras — borrador</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
   <style>
-    :root { --navy:#1e3a4c; --ink:#14202a; --paper:#eef3f6; --wa:#128C7E; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: system-ui, sans-serif; color:var(--ink); background:#fff; }
-    .note { background:#fff3cd; color:#5c4800; font-size:13px; padding:8px 16px; text-align:center; }
-    header { background:var(--navy); color:#fff; padding:28px 20px 36px; }
-    header p { margin:8px 0 0; opacity:.9; }
-    h1,h2 { margin:0 0 8px; letter-spacing:-.02em; }
-    img.hero { width:100%; height:220px; object-fit:cover; display:block; }
-    main { padding:20px; max-width:520px; margin:0 auto; }
-    .card { background:var(--paper); border-radius:12px; padding:16px; margin:12px 0; }
-    ul { margin:8px 0 0; padding-left:18px; }
-    a.btn { display:block; text-align:center; text-decoration:none; border-radius:999px; padding:14px 18px; font-weight:600; margin:10px 0; }
-    a.wa { background:var(--wa); color:#fff; }
-    a.call { background:var(--navy); color:#fff; }
-    footer { font-size:13px; color:#666; padding:8px 0 40px; }
+    :root { --pico-font-family: system-ui, sans-serif; --pico-primary: #1e3a4c; --pico-primary-hover: #152a37; --pico-background-color: #eef3f6; }
+    body { padding-bottom: 88px; }
+    .note { background: #fff3cd; color: #5c4800; text-align: center; padding: .5rem 1rem; margin: 0; font-size: .85rem; }
+    header.hero { background: #1e3a4c; color: #fff; padding: 2rem 1rem 2.4rem; }
+    header.hero h1, header.hero p { color: #fff; margin: 0; }
+    header.hero p { opacity: .9; margin-top: .4rem; }
+    img.cover { width: 100%; height: 220px; object-fit: cover; display: block; }
+    main { max-width: 34rem; }
+    .dock { position: fixed; left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; padding: .7rem 1rem calc(.7rem + env(safe-area-inset-bottom)); background: #fff; border-top: 1px solid #ddd; }
+    .dock a { margin: 0; }
+    .wa { --pico-background-color: #128C7E; --pico-border-color: #128C7E; --pico-color: #fff; }
   </style>
 </head>
 <body>
-  <div class="note">Borrador de ejemplo — no es la web oficial de Contreras</div>
-  <header>
+  <p class="note">Borrador de ejemplo — no es la web oficial de Contreras</p>
+  <header class="hero">
     <h1>Contreras</h1>
     <p>Ventanas y puertas eficientes. Partner Finstral. Estepona.</p>
   </header>
-  <img class="hero" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=70" alt="Casa con ventanas">
-  <main>
-    <div class="card">
+  <img class="cover" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=70" alt="Casa con ventanas">
+  <main class="container">
+    <article>
       <h2>Qué instalamos</h2>
       <ul>
         <li>Ventanas PVC, aluminio y madera</li>
         <li>Puertas de entrada Finstral y Hörmann</li>
         <li>Cerramientos, toldos y protección solar</li>
       </ul>
-    </div>
-    <div class="card">
+    </article>
+    <article>
       <h2>Estudio</h2>
       <p>Plaza San Fernando, Edificio Los Monaguillos, local 3</p>
       <p>29680 Estepona</p>
-    </div>
-    <a class="btn wa" href="https://wa.me/34699343654">WhatsApp</a>
-    <a class="btn call" href="tel:+34951408465">Llamar 951 40 84 65</a>
-    <footer>instalacionescontreras.estepona@gmail.com</footer>
+    </article>
   </main>
+  <div class="dock">
+    <a class="wa" role="button" href="https://wa.me/34699343654">WhatsApp</a>
+    <a role="button" class="secondary" href="tel:+34951408465">Llamar</a>
+  </div>
 </body>
 </html>

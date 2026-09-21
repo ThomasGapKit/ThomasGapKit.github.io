@@ -4,48 +4,58 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sol y Sal — demo de portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
   <style>
-    :root { --sea:#1d4e5e; --ink:#14242a; --paper:#eef6f6; --wa:#128C7E; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: system-ui, sans-serif; color:var(--ink); background:#fff; }
-    .note { background:#fff3cd; color:#5c4800; font-size:13px; padding:8px 16px; text-align:center; }
-    header { background:var(--sea); color:#fff; padding:28px 20px 36px; }
-    header p { margin:8px 0 0; opacity:.9; }
-    h1,h2 { margin:0 0 8px; letter-spacing:-.02em; }
-    img.hero { width:100%; height:220px; object-fit:cover; display:block; }
-    main { padding:20px; max-width:520px; margin:0 auto; }
-    .card { background:var(--paper); border-radius:12px; padding:16px; margin:12px 0; }
-    ul { margin:8px 0 0; padding-left:18px; }
-    a.btn { display:block; text-align:center; text-decoration:none; border-radius:999px; padding:14px 18px; font-weight:600; margin:10px 0; }
-    a.wa { background:var(--wa); color:#fff; }
-    a.call { background:var(--sea); color:#fff; }
-    footer { font-size:13px; color:#666; padding:8px 0 40px; }
+    :root {
+      --pico-font-family: system-ui, sans-serif;
+      --pico-primary: #1d4e5e;
+      --pico-primary-hover: #163c48;
+      --pico-background-color: #f7f4ee;
+      --pico-card-background-color: #fff;
+    }
+    body { padding-bottom: 88px; }
+    .note { background: #fff3cd; color: #5c4800; text-align: center; padding: .5rem 1rem; margin: 0; font-size: .85rem; }
+    header.hero { background: #1d4e5e; color: #fff; padding: 2rem 1rem 2.4rem; }
+    header.hero h1, header.hero p { color: #fff; margin: 0; }
+    header.hero p { opacity: .9; margin-top: .4rem; }
+    img.cover { width: 100%; height: 220px; object-fit: cover; display: block; }
+    main { max-width: 34rem; }
+    .dock {
+      position: fixed; left: 0; right: 0; bottom: 0;
+      display: grid; grid-template-columns: 1fr 1fr; gap: .6rem;
+      padding: .7rem 1rem calc(.7rem + env(safe-area-inset-bottom));
+      background: #fff; border-top: 1px solid #ddd;
+    }
+    .dock a { margin: 0; }
+    .wa { --pico-background-color: #128C7E; --pico-border-color: #128C7E; --pico-color: #fff; }
   </style>
 </head>
 <body>
-  <div class="note">Demo de portfolio — negocio de ejemplo, no es un local real</div>
-  <header>
+  <p class="note">Demo de portfolio — negocio de ejemplo, no es un local real. Diseño: Pico CSS (MIT).</p>
+  <header class="hero">
     <h1>Sol y Sal</h1>
-    <p>Cocina mediterránea. Estepona. Reserva por WhatsApp.</p>
+    <p>Cocina mediterránea en Estepona. Reserva por WhatsApp.</p>
   </header>
-  <img class="hero" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=70" alt="Interior de restaurante">
-  <main>
-    <div class="card">
+  <img class="cover" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=70" alt="Interior de restaurante">
+  <main class="container">
+    <article>
       <h2>Carta rápida</h2>
       <ul>
         <li>Pescado del día</li>
         <li>Ensaladas y raciones</li>
         <li>Postres caseros</li>
       </ul>
-    </div>
-    <div class="card">
+    </article>
+    <article>
       <h2>Horario</h2>
       <p>Martes a domingo 13:00–16:00 y 19:30–23:00</p>
       <p>Ejemplo de dirección — Costa del Sol</p>
-    </div>
-    <a class="btn wa" href="https://wa.me/34600000000">WhatsApp</a>
-    <a class="btn call" href="tel:+34600000000">Llamar</a>
-    <footer>Portfolio de Thomas · thomasskarlo96@gmail.com</footer>
+    </article>
+    <p><small>Portfolio de Thomas · thomasskarlo96@gmail.com</small></p>
   </main>
+  <div class="dock">
+    <a class="wa" role="button" href="https://wa.me/34600000000">WhatsApp</a>
+    <a role="button" class="secondary" href="tel:+34600000000">Llamar</a>
+  </div>
 </body>
 </html>
