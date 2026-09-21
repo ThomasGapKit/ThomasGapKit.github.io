@@ -3,59 +3,78 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sol y Sal — demo de portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <title>Sol y Sal — Estepona</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --pico-font-family: system-ui, sans-serif;
-      --pico-primary: #1d4e5e;
-      --pico-primary-hover: #163c48;
-      --pico-background-color: #f7f4ee;
-      --pico-card-background-color: #fff;
-    }
-    body { padding-bottom: 88px; }
-    .note { background: #fff3cd; color: #5c4800; text-align: center; padding: .5rem 1rem; margin: 0; font-size: .85rem; }
-    header.hero { background: #1d4e5e; color: #fff; padding: 2rem 1rem 2.4rem; }
-    header.hero h1, header.hero p { color: #fff; margin: 0; }
-    header.hero p { opacity: .9; margin-top: .4rem; }
-    img.cover { width: 100%; height: 220px; object-fit: cover; display: block; }
-    main { max-width: 34rem; }
-    .dock {
-      position: fixed; left: 0; right: 0; bottom: 0;
-      display: grid; grid-template-columns: 1fr 1fr; gap: .6rem;
-      padding: .7rem 1rem calc(.7rem + env(safe-area-inset-bottom));
-      background: #fff; border-top: 1px solid #ddd;
-    }
-    .dock a { margin: 0; }
-    .wa { --pico-background-color: #128C7E; --pico-border-color: #128C7E; --pico-color: #fff; }
+    :root { --ink:#1b1410; --paper:#f6efe6; --sea:#17343d; --gold:#c4a574; --wa:#128C7E; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Outfit,system-ui,sans-serif; color:var(--ink); background:var(--paper); padding-bottom:92px; }
+    .banner { background:#fff3cd; color:#5c3b00; font-size:12px; text-align:center; padding:8px 12px; }
+    .hero { position:relative; min-height:78vh; color:#fff; display:flex; align-items:flex-end; }
+    .hero img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+    .hero .shade { position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(12,10,8,.72)); }
+    .hero .copy { position:relative; padding:28px 22px 36px; max-width:560px; }
+    .kicker { letter-spacing:.18em; text-transform:uppercase; font-size:11px; color:var(--gold); margin:0 0 8px; }
+    h1,h2 { font-family:Fraunces,Georgia,serif; margin:0 0 10px; letter-spacing:-.03em; }
+    h1 { font-size:clamp(40px,9vw,64px); line-height:.95; }
+    main { max-width:640px; margin:0 auto; padding:28px 20px; }
+    .grid { display:grid; gap:12px; grid-template-columns:1fr 1fr; }
+    .grid img { width:100%; height:150px; object-fit:cover; border-radius:14px; }
+    article { background:#fff; border-radius:16px; padding:18px; margin:14px 0; }
+    table { width:100%; border-collapse:collapse; font-size:15px; }
+    td { padding:8px 0; border-bottom:1px solid #eee; }
+    td:last-child { text-align:right; color:#555; }
+    .quote { font-family:Fraunces,serif; font-size:20px; line-height:1.35; margin:0 0 8px; }
+    .dock { position:fixed; left:0; right:0; bottom:0; display:grid; grid-template-columns:1.2fr 1fr; gap:8px; padding:10px 14px calc(10px + env(safe-area-inset-bottom)); background:rgba(246,239,230,.94); backdrop-filter:blur(10px); border-top:1px solid #e4d8c8; }
+    .dock a { display:block; text-align:center; text-decoration:none; font-weight:600; padding:14px; border-radius:999px; }
+    .wa { background:var(--wa); color:#fff; }
+    .call { background:var(--sea); color:#fff; }
+    footer { font-size:12px; color:#6b6258; text-align:center; padding:8px 0 20px; }
   </style>
 </head>
 <body>
-  <p class="note">Demo de portfolio — negocio de ejemplo, no es un local real. Diseño: Pico CSS (MIT).</p>
-  <header class="hero">
-    <h1>Sol y Sal</h1>
-    <p>Cocina mediterránea en Estepona. Reserva por WhatsApp.</p>
-  </header>
-  <img class="cover" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=70" alt="Interior de restaurante">
-  <main class="container">
+  <div class="banner">Demo de portfolio — no es un restaurante real. Así queda una one-page en el móvil.</div>
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1600&q=70" alt="Terraza al atardecer">
+    <div class="shade"></div>
+    <div class="copy">
+      <p class="kicker">Estepona · Costa del Sol</p>
+      <h1>Sol y Sal</h1>
+      <p>Cocina mediterránea. Mesa en la terraza. Reserva en un toque.</p>
+    </div>
+  </section>
+  <main>
+    <div class="grid">
+      <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=900&q=70" alt="Pescado a la brasa">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=70" alt="Mesa puesta">
+    </div>
     <article>
-      <h2>Carta rápida</h2>
-      <ul>
-        <li>Pescado del día</li>
-        <li>Ensaladas y raciones</li>
-        <li>Postres caseros</li>
-      </ul>
+      <h2>Carta corta</h2>
+      <table>
+        <tr><td>Pescado del día</td><td>mercado</td></tr>
+        <tr><td>Ensalada de tomate y ventresca</td><td>14€</td></tr>
+        <tr><td>Arroz de mar</td><td>22€</td></tr>
+        <tr><td>Postre de la casa</td><td>7€</td></tr>
+      </table>
     </article>
     <article>
       <h2>Horario</h2>
-      <p>Martes a domingo 13:00–16:00 y 19:30–23:00</p>
-      <p>Ejemplo de dirección — Costa del Sol</p>
+      <table>
+        <tr><td>Mar–Dom</td><td>13:00–16:00 · 19:30–23:00</td></tr>
+        <tr><td>Lunes</td><td>cerrado</td></tr>
+      </table>
     </article>
-    <p><small>Portfolio de Thomas · thomasskarlo96@gmail.com</small></p>
+    <article>
+      <p class="quote">“La terraza al atardecer y el pescado a la brasa. Volvemos siempre.”</p>
+      <p>Ana R. · Estepona</p>
+    </article>
+    <footer>Hecho por Thomas · one-page 150–250€ · thomasskarlo96@gmail.com</footer>
   </main>
   <div class="dock">
-    <a class="wa" role="button" href="https://wa.me/34600000000">WhatsApp</a>
-    <a role="button" class="secondary" href="tel:+34600000000">Llamar</a>
+    <a class="wa" href="https://wa.me/34600000000">Reservar por WhatsApp</a>
+    <a class="call" href="tel:+34600000000">Llamar</a>
   </div>
 </body>
 </html>
