@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Patriche Hairdresser &amp; Makeup · Peluquería en Coín</title>
+<meta name="description" content="Peluquería y maquillaje en Coín, Málaga. Corte, color, recogidos, peinado y maquillaje de novia. Reserva por WhatsApp.">
+<meta property="og:title" content="Patriche Hairdresser & Makeup · Coín">
+<meta property="og:image" content="img/novia.svg">
+<link rel="preload" as="image" href="img/novia.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#221c19;--soft:#6d625b;--cream:#f7f2ec;--sand:#e9dfd4;--gold:#a8855a}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Jost,system-ui,sans-serif;font-weight:300;color:var(--ink);background:var(--cream);line-height:1.65;padding-bottom:72px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.1}
+a{color:inherit}img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+header{position:fixed;inset:0 0 auto;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:16px 22px;color:#fff;transition:.3s}
+header.s{background:rgba(247,242,236,.96);color:var(--ink);box-shadow:0 1px 0 var(--sand);backdrop-filter:blur(6px)}
+.logo{font-family:"Cormorant Garamond",serif;font-size:1.35rem;letter-spacing:.32em;text-decoration:none}
+.logo small{display:block;font-family:Jost;font-size:.58rem;letter-spacing:.42em;margin-top:-2px}
+nav{display:flex;gap:22px;align-items:center;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+nav a.l{text-decoration:none;display:none}
+.lang{border:1px solid currentColor;border-radius:99px;display:flex;overflow:hidden}
+.lang button{background:none;border:0;color:inherit;font:500 .72rem Jost;letter-spacing:.1em;padding:6px 11px;cursor:pointer}
+.lang button.on{background:#fff;color:var(--ink)}header.s .lang button.on{background:var(--ink);color:var(--cream)}
+.hero{position:relative;height:100svh;min-height:560px;color:#fff;display:flex;align-items:flex-end}
+.hero img{position:absolute;inset:0;object-position:50% 25%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,0) 30%,rgba(0,0,0,.65))}
+.hero .wrap{position:relative;z-index:1;padding-bottom:64px;width:100%}
+.eyebrow{font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.hero .eyebrow{color:#f0dcc0}
+.hero h1{font-size:clamp(2.7rem,9vw,5.6rem);margin:12px 0 14px;max-width:12ch}
+.hero p{max-width:34rem;font-size:1.05rem;opacity:.92}
+.btn{display:inline-flex;align-items:center;gap:10px;margin-top:26px;background:#fff;color:var(--ink);text-decoration:none;padding:15px 26px;border-radius:99px;font-weight:500;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+.btn.d{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px}
+section{padding:88px 0}
+.intro{display:grid;gap:40px;align-items:center}
+.intro h2,.sec h2{font-size:clamp(2.1rem,5vw,3.2rem);margin:10px 0 18px}
+.intro p{color:var(--soft);margin-bottom:14px}
+.intro .ph{aspect-ratio:4/5;border-radius:2px;overflow:hidden}
+.stat{display:flex;gap:34px;margin-top:26px}.stat b{font-family:"Cormorant Garamond";font-size:2.2rem;font-weight:500;display:block;line-height:1}.stat span{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.svc{background:#fff}
+.cards{display:grid;gap:18px;margin-top:38px}
+.card{position:relative;overflow:hidden;aspect-ratio:3/4;color:#fff;border-radius:2px}
+.card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.72))}
+.card img{transition:transform .8s}.card:hover img{transform:scale(1.04)}
+.card div{position:absolute;z-index:1;left:22px;right:22px;bottom:22px}
+.card h3{font-size:2rem}.card p{font-size:.92rem;opacity:.9}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:38px}
+.gal figure{overflow:hidden;aspect-ratio:3/4;border-radius:2px}
+.gal figure:nth-child(3n+1){grid-row:span 1}
+.rev{background:var(--sand)}
+.quotes{display:grid;gap:18px;margin-top:38px}
+blockquote{background:var(--cream);padding:30px 28px;border-radius:2px}
+blockquote p{font-family:"Cormorant Garamond";font-size:1.3rem;font-style:italic;line-height:1.4}
+blockquote cite{display:block;margin-top:16px;font-style:normal;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.note{font-size:.8rem;color:var(--soft);margin-top:18px}
+.visit{display:grid;gap:34px}
+.visit dl{display:grid;gap:18px}.visit dt{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}.visit dd a{text-decoration:none;border-bottom:1px solid var(--sand)}
+.map{aspect-ratio:4/3;border:0;width:100%;filter:grayscale(.4)}
+footer{background:var(--ink);color:#cfc5bc;padding:40px 0;font-size:.82rem;text-align:center}
+footer .logo{color:#fff;display:inline-block;margin-bottom:12px}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr 1.6fr;background:var(--ink);padding:10px;gap:8px;padding-bottom:max(10px,env(safe-area-inset-bottom))}
+.bar a{display:flex;align-items:center;justify-content:center;gap:7px;color:#fff;text-decoration:none;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;padding:12px 6px;border:1px solid #4a403a;border-radius:99px}
+.bar a.wa{background:#fff;color:var(--ink);border-color:#fff;font-weight:500}
+.bar svg{width:16px;height:16px}
+[data-en]{}
+@media(min-width:760px){
+ body{padding-bottom:0}.bar{display:none}nav a.l{display:inline}
+ .intro{grid-template-columns:1fr 1fr;gap:70px}
+ .cards{grid-template-columns:repeat(4,1fr)}
+ .gal{grid-template-columns:repeat(4,1fr)}.gal figure:nth-child(5n+1){grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+ .quotes{grid-template-columns:repeat(2,1fr)}
+ .visit{grid-template-columns:1fr 1.2fr;align-items:center}
+}
+</style>
+</head>
+<body>
+<header id="top">
+ <a class="logo" href="#">PATRICHE<small>HAIR &amp; MAKEUP</small></a>
+ <nav>
+  <a class="l" href="#servicios" data-i="nS">Servicios</a>
+  <a class="l" href="#trabajos" data-i="nG">Trabajos</a>
+  <a class="l" href="#visita" data-i="nV">Visítanos</a>
+  <div class="lang"><button id="bES" class="on" onclick="setL('es')"><span>ES</span></button><button id="bEN" onclick="setL('en')"><span>EN</span></button></div>
+ </nav>
+</header>
+
+<section class="hero" style="padding:0">
+ <img src="img/novia.svg" alt="Peinado de novia con velo realizado por Patriche" fetchpriority="high">
+ <div class="wrap">
+  <div class="eyebrow" data-i="hE">Peluquería y maquillaje · Coín, Málaga</div>
+  <h1 data-i="hT">Tu estilo, nuestra pasión.</h1>
+  <p data-i="hP">Corte, color, recogidos y maquillaje para novias e invitadas, en el centro de Coín.</p>
+  <a class="btn wa-link" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span data-i="cta">Reservar por WhatsApp</span></a>
+ </div>
+</section>
+
+<section>
+ <div class="wrap intro">
+  <div>
+   <div class="eyebrow" data-i="aE">Sobre Patriche</div>
+   <h2 data-i="aT">Cuidamos de tu cabello para que brilles con confianza.</h2>
+   <p data-i="aP1">En Patriche Hairdresser transformamos tu estilo con pasión y profesionalidad. Patri escucha lo que buscas, te explica cada paso y trabaja con productos de alta calidad en un ambiente cercano y tranquilo.</p>
+   <p data-i="aP2">Desde un corte que respete tu rizo hasta el peinado y maquillaje de tu boda: cada detalle cuenta.</p>
+   <div class="stat"><div><b>5,0 ★</b><span data-i="sR">Valoración en Google</span></div><div><b>ES · EN</b><span data-i="sL">Atención en español e inglés</span></div></div>
+  </div>
+  <div class="ph"><img src="img/melena-rubia.svg" alt="Melena rubia larga y luminosa" loading="lazy"></div>
+ </div>
+</section>
+
+<section class="svc" id="servicios">
+ <div class="wrap sec">
+  <div class="eyebrow" data-i="sE">Servicios</div>
+  <h2 data-i="sT">Lo que hacemos</h2>
+  <div class="cards">
+   <div class="card"><img src="img/ondas-rubias.svg" alt="Corte y peinado con ondas" loading="lazy"><div><h3 data-i="c1">Corte</h3><p data-i="c1p">Cortes a medida, también para pelo rizado, pensados para que tu pelo funcione cada día.</p></div></div>
+   <div class="card"><img src="img/ondas-mechas.svg" alt="Color con mechas y ondas" loading="lazy"><div><h3 data-i="c2">Color</h3><p data-i="c2p">Tintes y mechas, con tratamientos de hidratación para recuperar el pelo castigado.</p></div></div>
+   <div class="card"><img src="img/recogido-mono.svg" alt="Recogido alto con moño" loading="lazy"><div><h3 data-i="c3">Recogidos</h3><p data-i="c3p">Recogidos y semirecogidos para bodas, comuniones y eventos, con flores o joyas si lo deseas.</p></div></div>
+   <div class="card"><img src="img/maquillaje.svg" alt="Maquillaje de evento" loading="lazy"><div><h3 data-i="c4">Novias y maquillaje</h3><p data-i="c4p">Peinado y maquillaje para novias e invitadas, para que te veas tú misma en tu mejor versión.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="trabajos">
+ <div class="wrap sec">
+  <div class="eyebrow" data-i="gE">Trabajos reales</div>
+  <h2 data-i="gT">Del salón a tu gran día</h2>
+  <div class="gal">
+   <figure><img src="img/semirecogido-rizos.svg" alt="Semirecogido con rizos y adorno dorado" loading="lazy"></figure>
+   <figure><img src="img/semirecogido-joya.svg" alt="Semirecogido con joya de pelo" loading="lazy"></figure>
+   <figure><img src="img/corona-flores.svg" alt="Ondas con corona de flores" loading="lazy"></figure>
+   <figure><img src="img/ondas-flores.svg" alt="Ondas largas con flores" loading="lazy"></figure>
+   <figure><img src="img/novia.svg" alt="Novia con velo" loading="lazy"></figure>
+   <figure><img src="img/ondas-rubias.svg" alt="Ondas rubias" loading="lazy"></figure>
+   <figure><img src="img/recogido-mono.svg" alt="Moño alto" loading="lazy"></figure>
+   <figure><img src="img/melena-rubia.svg" alt="Melena rubia" loading="lazy"></figure>
+  </div>
+  <a class="btn d" href="https://www.instagram.com/patriche__hairdresser/" target="_blank" rel="noopener" data-i="ig">Más en Instagram @patriche__hairdresser</a>
+ </div>
+</section>
+
+<section class="rev">
+ <div class="wrap sec">
+  <div class="eyebrow" data-i="rE">Opiniones</div>
+  <h2 data-i="rT">Lo que dicen nuestras clientas</h2>
+  <div class="quotes">
+   <blockquote><p>“Solo buenos comentarios puedo poner! Patricia tiene la mejor de las energías, entendió el corte que quería hacerme y me explicó todo. Muy profesional y yo muy conforme. Definitivamente voy a volver!”</p><cite>Tatiana</cite></blockquote>
+   <blockquote><p>“Trato muy familiar, he logrado recuperar mi rizo tras mucho tinte y mechas. Los productos son de calidad y los tratamientos de hidratación merecen mucho la pena porque recuperas tu pelo en cuestión de poco tiempo”</p><cite>María</cite></blockquote>
+   <blockquote><p>“Muy satisfecha con la experiencia! Soy nueva en el pueblo y he buscado por reseñas una peluquería por la zona y me decidí por Patriche-Hairdresser. Estoy muy contenta con mi decisión, Patri que me ha atendido con mucha amabilidad y profesionalidad. Muy recomendable.”</p><cite>Mariola</cite></blockquote>
+   <blockquote><p>“Excelente experiencia en Patriche Hairdressed. El personal es profesional y amable, ella hizo un trabajo fantástico con mi corte, además el ambiente es relajante y usan productos de alta calidad. ¡Muy recomendable!”</p><cite>Victor</cite></blockquote>
+  </div>
+  <p class="note" data-i="rN">Reseñas de Google, en su idioma original.</p>
+ </div>
+</section>
+
+<section id="visita">
+ <div class="wrap visit">
+  <div>
+   <div class="eyebrow" data-i="vE">Visítanos</div>
+   <h2 style="font-size:clamp(2.1rem,5vw,3.2rem);margin:10px 0 26px" data-i="vT">Te esperamos en Coín</h2>
+   <dl>
+    <div><dt data-i="dA">Dirección</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=Patriche+Hairdresser+C.+Las+Palmas+4+29100+Co%C3%ADn" target="_blank" rel="noopener">Reina Sofía, C. Las Palmas, 4<br>29100 Coín, Málaga</a></dd></div>
+    <div><dt data-i="dH">Horario</dt><dd data-i="dHv">Reserva por WhatsApp</dd></div>
+    <div><dt data-i="dC">Contacto</dt><dd><a href="tel:+34649770547">+34 649 77 05 47</a><br><a href="mailto:patriche_22@hotmail.com">patriche_22@hotmail.com</a></dd></div>
+   </dl>
+   <a class="btn d wa-link" href="#" target="_blank" rel="noopener"><span data-i="cta">Reservar por WhatsApp</span></a>
+  </div>
+  <iframe class="map" loading="lazy" title="Mapa" src="https://maps.google.com/maps?q=C.%20Las%20Palmas%204%2C%2029100%20Co%C3%ADn&z=16&output=embed"></iframe>
+ </div>
+</section>
+
+<footer>
+ <div class="logo">PATRICHE<small>HAIR &amp; MAKEUP</small></div>
+ <p>Reina Sofía, C. Las Palmas, 4 · 29100 Coín · <a href="https://www.instagram.com/patriche__hairdresser/">@patriche__hairdresser</a></p>
+ <p style="margin-top:8px">© 2026 Patriche Hairdresser &amp; Makeup</p>
+</footer>
+
+<div class="bar">
+ <a href="tel:+34649770547"><span data-i="bC">Llamar</span></a>
+ <a href="https://www.google.com/maps/search/?api=1&query=Patriche+Hairdresser+C.+Las+Palmas+4+29100+Co%C3%ADn" target="_blank" rel="noopener"><span data-i="bM">Cómo llegar</span></a>
+ <a class="wa wa-link" href="#" target="_blank" rel="noopener"><span data-i="bW">Reservar · WhatsApp</span></a>
+</div>
+
+<script>
+const T={en:{nS:"Services",nG:"Our work",nV:"Visit",hE:"Hair & makeup · Coín, Málaga",hT:"Your style, our passion.",hP:"Cuts, colour, updos and makeup for brides and guests, in the heart of Coín.",cta:"Book on WhatsApp",aE:"About Patriche",aT:"We care for your hair so you can shine with confidence.",aP1:"At Patriche Hairdresser we transform your style with passion and professionalism. Patri listens to what you want, explains every step and works with high-quality products in a warm, relaxed setting.",aP2:"From a cut that respects your curls to your wedding-day hair and makeup: every detail counts.",sR:"Google rating",sL:"Service in Spanish and English",sE:"Services",sT:"What we do",c1:"Cut",c1p:"Tailored cuts, curly hair included, designed to work for you every day.",c2:"Colour",c2p:"Tints and highlights, with hydration treatments to bring damaged hair back to life.",c3:"Updos",c3p:"Updos and half-ups for weddings, communions and events, with flowers or hair jewellery if you like.",c4:"Bridal & makeup",c4p:"Hair and makeup for brides and guests, so you look like yourself at your very best.",gE:"Real work",gT:"From the salon to your big day",ig:"More on Instagram @patriche__hairdresser",rE:"Reviews",rT:"What our clients say",rN:"Google reviews, in their original language.",vE:"Visit us",vT:"See you in Coín",dA:"Address",dH:"Opening hours",dHv:"Book on WhatsApp",dC:"Contact",bC:"Call",bM:"Directions",bW:"Book · WhatsApp"}};
+const M={es:"Hola Patri, me gustaría reservar una cita en Patriche. ¿Qué disponibilidad tienes?",en:"Hi Patri, I'd like to book an appointment at Patriche. What availability do you have?"};
+const ES={};document.querySelectorAll('[data-i]').forEach(e=>ES[e.dataset.i]=e.textContent);T.es=ES;
+function setL(l){document.documentElement.lang=l;document.querySelectorAll('[data-i]').forEach(e=>{const v=T[l][e.dataset.i];if(v)e.textContent=v});
+document.querySelectorAll('.wa-link').forEach(a=>a.href="https://wa.me/34649770547?text="+encodeURIComponent(M[l]));
+bES.classList.toggle('on',l=='es');bEN.classList.toggle('on',l=='en');try{localStorage.lang=l}catch(e){}}
+setL((()=>{try{return localStorage.lang}catch(e){}})()||(navigator.language||'es').startsWith('en')&&'en'||'es');
+const h=document.getElementById('top');addEventListener('scroll',()=>h.classList.toggle('s',scrollY>60),{passive:true});
+</script>
+</body>
+</html>
