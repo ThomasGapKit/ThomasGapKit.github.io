@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Peluquería Rosacoral · Alhaurín el Grande</title><meta name="description" content="Peluquería Rosacoral en Alhaurín el Grande. Más de 30 años de experiencia. Calle Nueva 9. Cita por WhatsApp.">
+<meta property="og:title" content="Peluquería Rosacoral · Alhaurín el Grande"><meta property="og:image" content="img/hero.svg">
+<link rel="preload" as="image" href="img/hero.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2a1d1f;--soft:#6e5d5a;--cream:#faf5f2;--sand:#eadcd6;--gold:#a8606a}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Jost,system-ui,sans-serif;font-weight:300;color:var(--ink);background:var(--cream);line-height:1.65;padding-bottom:72px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.1}
+a{color:inherit}img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+header{position:fixed;inset:0 0 auto;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:16px 22px;color:#fff;transition:.3s}
+header.s{background:rgba(247,242,236,.96);color:var(--ink);box-shadow:0 1px 0 var(--sand);backdrop-filter:blur(6px)}
+.logo{font-family:"Cormorant Garamond",serif;font-size:1.35rem;letter-spacing:.32em;text-decoration:none}
+.logo small{display:block;font-family:Jost;font-size:.58rem;letter-spacing:.42em;margin-top:-2px}
+nav{display:flex;gap:22px;align-items:center;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+nav a.l{text-decoration:none;display:none}
+.lang{border:1px solid currentColor;border-radius:99px;display:flex;overflow:hidden}
+.lang button{background:none;border:0;color:inherit;font:500 .72rem Jost;letter-spacing:.1em;padding:6px 11px;cursor:pointer}
+.lang button.on{background:#fff;color:var(--ink)}header.s .lang button.on{background:var(--ink);color:var(--cream)}
+.hero{position:relative;height:100svh;min-height:560px;color:#fff;display:flex;align-items:flex-end}
+.hero img{position:absolute;inset:0;object-position:50% 25%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,0) 30%,rgba(0,0,0,.65))}
+.hero .wrap{position:relative;z-index:1;padding-bottom:64px;width:100%}
+.eyebrow{font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.hero .eyebrow{color:#f0dcc0}
+.hero h1{font-size:clamp(2.7rem,9vw,5.6rem);margin:12px 0 14px;max-width:12ch}
+.hero p{max-width:34rem;font-size:1.05rem;opacity:.92}
+.btn{display:inline-flex;align-items:center;gap:10px;margin-top:26px;background:#fff;color:var(--ink);text-decoration:none;padding:15px 26px;border-radius:99px;font-weight:500;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+.btn.d{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px}
+section{padding:88px 0}
+.intro{display:grid;gap:40px;align-items:center}
+.intro h2,.sec h2{font-size:clamp(2.1rem,5vw,3.2rem);margin:10px 0 18px}
+.intro p{color:var(--soft);margin-bottom:14px}
+.intro .ph{aspect-ratio:4/5;border-radius:2px;overflow:hidden}
+.stat{display:flex;gap:34px;margin-top:26px}.stat b{font-family:"Cormorant Garamond";font-size:2.2rem;font-weight:500;display:block;line-height:1}.stat span{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.svc{background:#fff}
+.cards{display:grid;gap:18px;margin-top:38px}
+.card{position:relative;overflow:hidden;aspect-ratio:3/4;color:#fff;border-radius:2px}
+.card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.72))}
+.card img{transition:transform .8s}.card:hover img{transform:scale(1.04)}
+.card div{position:absolute;z-index:1;left:22px;right:22px;bottom:22px}
+.card h3{font-size:2rem}.card p{font-size:.92rem;opacity:.9}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:38px}
+.gal figure{overflow:hidden;aspect-ratio:3/4;border-radius:2px}
+.gal figure:nth-child(3n+1){grid-row:span 1}
+.rev{background:var(--sand)}
+.quotes{display:grid;gap:18px;margin-top:38px}
+blockquote{background:var(--cream);padding:30px 28px;border-radius:2px}
+blockquote p{font-family:"Cormorant Garamond";font-size:1.3rem;font-style:italic;line-height:1.4}
+blockquote cite{display:block;margin-top:16px;font-style:normal;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.note{font-size:.8rem;color:var(--soft);margin-top:18px}
+.visit{display:grid;gap:34px}
+.visit dl{display:grid;gap:18px}.visit dt{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}.visit dd a{text-decoration:none;border-bottom:1px solid var(--sand)}
+.map{aspect-ratio:4/3;border:0;width:100%;filter:grayscale(.4)}
+footer{background:var(--ink);color:#cfc5bc;padding:40px 0;font-size:.82rem;text-align:center}
+footer .logo{color:#fff;display:inline-block;margin-bottom:12px}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr 1.6fr;background:var(--ink);padding:10px;gap:8px;padding-bottom:max(10px,env(safe-area-inset-bottom))}
+.bar a{display:flex;align-items:center;justify-content:center;gap:7px;color:#fff;text-decoration:none;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;padding:12px 6px;border:1px solid #4a403a;border-radius:99px}
+.bar a.wa{background:#fff;color:var(--ink);border-color:#fff;font-weight:500}
+.bar svg{width:16px;height:16px}
+[data-en]{}
+@media(min-width:760px){
+ body{padding-bottom:0}.bar{display:none}nav a.l{display:inline}
+ .intro{grid-template-columns:1fr 1fr;gap:70px}
+ .cards{grid-template-columns:repeat(4,1fr)}
+ .gal{grid-template-columns:repeat(4,1fr)}.gal figure:nth-child(5n+1){grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+ .quotes{grid-template-columns:repeat(2,1fr)}
+ .visit{grid-template-columns:1fr 1.2fr;align-items:center}
+}
+.card p,.card h3{text-shadow:0 1px 8px rgba(0,0,0,.4)}.list{columns:2;gap:24px;margin-top:22px;color:var(--soft)}.list li{margin:0 0 8px 18px;break-inside:avoid}.bar{grid-template-columns:1fr 1fr 1.6fr}/* polish: carousel, lightbox, motion */
+.hero{overflow:hidden}.hero img{animation:kb 26s ease-in-out infinite alternate;transform-origin:50% 35%}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.12) translate(-1%,-1.5%)}}
+.hero:after{background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.12) 32%,rgba(0,0,0,.25) 55%,rgba(0,0,0,.72))!important}
+.hero h1,.hero p{text-shadow:0 2px 14px rgba(0,0,0,.35)}
+.car{position:relative;margin-top:38px}
+.gal.track{display:flex!important;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0;padding:0 0 4px;overscroll-behavior-x:contain}
+.gal.track::-webkit-scrollbar{display:none}
+.gal.track figure{flex:0 0 78%;scroll-snap-align:center;aspect-ratio:4/5;cursor:zoom-in;border-radius:4px;overflow:hidden;margin:0}
+.gal.track figure img{transition:transform .6s ease}.gal.track figure:hover img{transform:scale(1.04)}
+@media(min-width:700px){.gal.track figure{flex-basis:calc((100% - 20px)/3);scroll-snap-align:start}}
+.car .arr{display:none;position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:46px;height:46px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:var(--ink);font-size:22px;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.18)}
+.car .arr.p{left:-14px}.car .arr.n{right:-14px}.car .arr:disabled{opacity:.35;cursor:default}
+@media(hover:hover) and (min-width:700px){.car .arr{display:block}}
+.dots{display:flex;justify-content:center;gap:8px;margin:16px 0 4px}
+.dots button{width:8px;height:8px;border-radius:99px;border:0;padding:0;background:var(--sand);cursor:pointer;transition:width .3s,background .3s}
+.dots button.on{width:22px;background:var(--gold)}
+.lb{position:fixed;inset:0;z-index:60;background:rgba(10,8,7,.94);display:none;align-items:center;justify-content:center}
+.lb.o{display:flex}.lb img{width:auto;height:auto;max-width:94vw;max-height:86vh;object-fit:contain}
+.lb button{position:absolute;background:none;border:0;color:#fff;font-size:34px;cursor:pointer;padding:12px 18px}
+.lb .x{top:8px;right:8px}.lb .lp{left:4px;top:50%;transform:translateY(-50%)}.lb .ln{right:4px;top:50%;transform:translateY(-50%)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.hero img{animation:none}.rv{opacity:1;transform:none;transition:none}.gal.track{scroll-behavior:auto}.gal.track figure img{transition:none}}
+</style></head><body>
+<header id="top"><a class="logo" href="#">ROSACORAL<small>PELUQUERÍA · ALHAURÍN</small></a>
+<nav><a class="l" href="#trabajos">Trabajos</a><a class="l" href="#visita">Contacto</a></nav></header>
+<section class="hero" style="padding:0"><img src="img/hero.svg" alt="Peinado de novia con tiara de Peluquería Rosacoral" fetchpriority="high" style="object-position:50% 30%">
+<div class="wrap"><div class="eyebrow">Peluquería · Alhaurín el Grande</div><h1>Peluquería Rosacoral</h1><p>Más de 30 años de experiencia. Calle Nueva 9, Alhaurín el Grande.</p>
+<a class="btn" href="https://wa.me/34609058276?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20quiero%20pedir%20cita%20en%20Peluquer%C3%ADa%20Rosacoral." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span>Pedir cita por WhatsApp</span></a></div></section>
+<section><div class="wrap intro"><div><div class="eyebrow">Quiénes somos</div><h2>Tu peluquería en Alhaurín el Grande.</h2><p>Más de 30 años de experiencia cuidando el pelo de nuestras clientas. Trabajamos con Wella.</p><div class="stat"><div><b>+30</b><span>años de experiencia</span></div><div><b>Wella</b><span>Productos</span></div></div></div>
+<div class="ph"><img src="img/salon.svg" alt="Preparando un recogido en Peluquería Rosacoral" loading="lazy"></div></div></section>
+<section class="svc" id="trabajos"><div class="wrap sec"><div class="eyebrow">Trabajos reales</div><h2>Peinados hechos en Rosacoral</h2><div class="car"><button class="arr p" aria-label="Anterior">&#8249;</button><div class="gal track"><figure><img src="img/t1.svg" alt="Recogido bajo pulido · Peluquería Rosacoral" loading="lazy"></figure><figure><img src="img/t2.svg" alt="Recogido bajo · Peluquería Rosacoral" loading="lazy"></figure><figure><img src="img/t3.svg" alt="Moño bajo con volumen · Peluquería Rosacoral" loading="lazy"></figure><figure><img src="img/t4.svg" alt="Melena con lazo · Peluquería Rosacoral" loading="lazy"></figure><figure><img src="img/t5.svg" alt="Moño bajo de invitada · Peluquería Rosacoral" loading="lazy"></figure><figure><img src="img/t6.svg" alt="Trenza deshecha · Peluquería Rosacoral" loading="lazy"></figure><figure><img src="img/t7.svg" alt="Mechas y ondas · Peluquería Rosacoral" loading="lazy"></figure><figure><img src="img/t8.svg" alt="Coleta con lazo · Peluquería Rosacoral" loading="lazy"></figure><figure><img src="img/t9.svg" alt="Trenza de raíz · Peluquería Rosacoral" loading="lazy"></figure></div><button class="arr n" aria-label="Siguiente">&#8250;</button><div class="dots"></div></div><p class="note">Fotos de trabajos publicadas en nuestro Instagram @rosacoralpelos.</p><a class="btn d" href="https://www.instagram.com/rosacoralpelos/" target="_blank" rel="noopener">Ver Instagram</a></div></section>
+<section id="visita"><div class="wrap visit"><div><div class="eyebrow">Contacto</div><h2 style="font-size:clamp(2.1rem,5vw,3.2rem);margin:10px 0 26px">Te esperamos en Alhaurín el Grande</h2>
+<dl><div><dt>Dirección</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=Peluquer%C3%ADa%20Rosacoral%2C%20Calle%20Nueva%209%2C%20Alhaur%C3%ADn%20el%20Grande" target="_blank" rel="noopener">Calle Nueva, 9<br>Alhaurín el Grande (Málaga)</a></dd></div>
+<div><dt>Horario</dt><dd>Cita por WhatsApp</dd></div>
+<div><dt>Teléfonos</dt><dd><a href="tel:+34679596443">679 596 443</a> · <a href="tel:+34609058276">609 058 276</a></dd></div></dl>
+<a class="btn d" href="https://wa.me/34609058276?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20quiero%20pedir%20cita%20en%20Peluquer%C3%ADa%20Rosacoral." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span>Pedir cita por WhatsApp</span></a></div>
+<iframe class="map" loading="lazy" title="Mapa" src="https://maps.google.com/maps?q=Calle%20Nueva%209%2C%20Alhaur%C3%ADn%20el%20Grande%2C%20M%C3%A1laga&z=16&output=embed"></iframe></div></section>
+<footer><div class="logo">ROSACORAL<small>PELUQUERÍA · ALHAURÍN</small></div><p>Calle Nueva, 9 · Alhaurín el Grande</p><p style="margin-top:8px">© 2026 Peluquería Rosacoral</p></footer>
+<div class="bar"><a href="tel:+34609058276">Llamar</a><a href="https://www.google.com/maps/search/?api=1&query=Peluquer%C3%ADa%20Rosacoral%2C%20Calle%20Nueva%209%2C%20Alhaur%C3%ADn%20el%20Grande" target="_blank" rel="noopener">Cómo llegar</a><a class="wa" href="https://wa.me/34609058276?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20quiero%20pedir%20cita%20en%20Peluquer%C3%ADa%20Rosacoral." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span>Cita · WhatsApp</span></a></div>
+<script>const h=document.getElementById('top');addEventListener('scroll',()=>h.classList.toggle('s',scrollY>60),{passive:true});</script>
+<div class="lb" role="dialog" aria-modal="true"><button class="x" aria-label="Cerrar">&times;</button><button class="lp" aria-label="Anterior">&#8249;</button><img alt=""><button class="ln" aria-label="Siguiente">&#8250;</button></div><script>/* polish: carousel + lightbox + reveal (vanilla) */
+(()=>{const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+document.querySelectorAll('.car').forEach(c=>{const t=c.querySelector('.track'),fs=[...t.children],d=c.querySelector('.dots'),p=c.querySelector('.p'),n=c.querySelector('.n');
+ fs.forEach((f,i)=>{const b=document.createElement('button');b.setAttribute('aria-label',(i+1)+'/'+fs.length);b.onclick=()=>go(i);d.appendChild(b)});
+ const go=i=>t.scrollTo({left:fs[Math.max(0,Math.min(fs.length-1,i))].offsetLeft-t.offsetLeft,behavior:RM?'auto':'smooth'});
+ const cur=()=>{let k=0,m=1e9;fs.forEach((f,i)=>{const v=Math.abs(f.offsetLeft-t.offsetLeft-t.scrollLeft);if(v<m){m=v;k=i}});return k};
+ const upd=()=>{const k=cur();[...d.children].forEach((b,i)=>b.classList.toggle('on',i==k));p.disabled=t.scrollLeft<4;n.disabled=t.scrollLeft+t.clientWidth>=t.scrollWidth-4};
+ let r;t.addEventListener('scroll',()=>{cancelAnimationFrame(r);r=requestAnimationFrame(upd)},{passive:true});
+ p.onclick=()=>go(cur()-1);n.onclick=()=>go(cur()+1);addEventListener('resize',upd);upd();
+ const lb=document.querySelector('.lb'),li=lb.querySelector('img');let k=0;
+ const show=i=>{k=(i+fs.length)%fs.length;const im=fs[k].querySelector('img');li.src=im.src;li.alt=im.alt};
+ fs.forEach((f,i)=>f.onclick=()=>{show(i);lb.classList.add('o');document.body.style.overflow='hidden'});
+ const close=()=>{lb.classList.remove('o');document.body.style.overflow=''};
+ lb.querySelector('.x').onclick=close;lb.querySelector('.lp').onclick=e=>{e.stopPropagation();show(k-1)};lb.querySelector('.ln').onclick=e=>{e.stopPropagation();show(k+1)};
+ lb.onclick=e=>{if(e.target==lb)close()};
+ addEventListener('keydown',e=>{if(!lb.classList.contains('o'))return;if(e.key=='Escape')close();if(e.key=='ArrowLeft')show(k-1);if(e.key=='ArrowRight')show(k+1)});
+ let sx;lb.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});lb.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)show(k+(dx<0?1:-1))});
+});
+if(!RM&&'IntersectionObserver'in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px',threshold:.08});
+ document.querySelectorAll('section:not(.hero) .wrap>*,.card,.ph,.quotes blockquote,.car').forEach(el=>{el.classList.add('rv');io.observe(el)})}
+})();
+</script></body></html>
