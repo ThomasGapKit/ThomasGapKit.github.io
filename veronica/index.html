@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verónica Nails & Beauty Center · Uñas y estética en Benalmádena</title><meta name="description" content="Centro de uñas y estética en Arroyo de la Miel, Benalmádena: manicura, uñas de gel y acrílico, pedicura spa, depilación con hilo y cera. 5,0 en Booksy.">
+<meta property="og:title" content="Verónica Nails & Beauty Center · Uñas y estética en Benalmádena"><meta property="og:image" content="img/hero.svg">
+<link rel="preload" as="image" href="img/hero.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2b1d21;--soft:#6d625b;--cream:#fbf6f7;--sand:#f1e2e5;--gold:#c0798a}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Jost,system-ui,sans-serif;font-weight:300;color:var(--ink);background:var(--cream);line-height:1.65;padding-bottom:72px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.1}
+a{color:inherit}img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+header{position:fixed;inset:0 0 auto;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:16px 22px;color:#fff;transition:.3s}
+header.s{background:rgba(247,242,236,.96);color:var(--ink);box-shadow:0 1px 0 var(--sand);backdrop-filter:blur(6px)}
+.logo{font-family:"Cormorant Garamond",serif;font-size:1.35rem;letter-spacing:.32em;text-decoration:none}
+.logo small{display:block;font-family:Jost;font-size:.58rem;letter-spacing:.42em;margin-top:-2px}
+nav{display:flex;gap:22px;align-items:center;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+nav a.l{text-decoration:none;display:none}
+.lang{border:1px solid currentColor;border-radius:99px;display:flex;overflow:hidden}
+.lang button{background:none;border:0;color:inherit;font:500 .72rem Jost;letter-spacing:.1em;padding:6px 11px;cursor:pointer}
+.lang button.on{background:#fff;color:var(--ink)}header.s .lang button.on{background:var(--ink);color:var(--cream)}
+.hero{position:relative;height:100svh;min-height:560px;color:#fff;display:flex;align-items:flex-end}
+.hero img{position:absolute;inset:0;object-position:50% 25%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,0) 30%,rgba(0,0,0,.65))}
+.hero .wrap{position:relative;z-index:1;padding-bottom:64px;width:100%}
+.eyebrow{font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.hero .eyebrow{color:#f0dcc0}
+.hero h1{font-size:clamp(2.7rem,9vw,5.6rem);margin:12px 0 14px;max-width:12ch}
+.hero p{max-width:34rem;font-size:1.05rem;opacity:.92}
+.btn{display:inline-flex;align-items:center;gap:10px;margin-top:26px;background:#fff;color:var(--ink);text-decoration:none;padding:15px 26px;border-radius:99px;font-weight:500;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+.btn.d{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px}
+section{padding:88px 0}
+.intro{display:grid;gap:40px;align-items:center}
+.intro h2,.sec h2{font-size:clamp(2.1rem,5vw,3.2rem);margin:10px 0 18px}
+.intro p{color:var(--soft);margin-bottom:14px}
+.intro .ph{aspect-ratio:4/5;border-radius:2px;overflow:hidden}
+.stat{display:flex;gap:34px;margin-top:26px}.stat b{font-family:"Cormorant Garamond";font-size:2.2rem;font-weight:500;display:block;line-height:1}.stat span{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.svc{background:#fff}
+.cards{display:grid;gap:18px;margin-top:38px}
+.card{position:relative;overflow:hidden;aspect-ratio:3/4;color:#fff;border-radius:2px}
+.card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.72))}
+.card img{transition:transform .8s}.card:hover img{transform:scale(1.04)}
+.card div{position:absolute;z-index:1;left:22px;right:22px;bottom:22px}
+.card h3{font-size:2rem}.card p{font-size:.92rem;opacity:.9}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:38px}
+.gal figure{overflow:hidden;aspect-ratio:3/4;border-radius:2px}
+.gal figure:nth-child(3n+1){grid-row:span 1}
+.rev{background:var(--sand)}
+.quotes{display:grid;gap:18px;margin-top:38px}
+blockquote{background:var(--cream);padding:30px 28px;border-radius:2px}
+blockquote p{font-family:"Cormorant Garamond";font-size:1.3rem;font-style:italic;line-height:1.4}
+blockquote cite{display:block;margin-top:16px;font-style:normal;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.note{font-size:.8rem;color:var(--soft);margin-top:18px}
+.visit{display:grid;gap:34px}
+.visit dl{display:grid;gap:18px}.visit dt{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}.visit dd a{text-decoration:none;border-bottom:1px solid var(--sand)}
+.map{aspect-ratio:4/3;border:0;width:100%;filter:grayscale(.4)}
+footer{background:var(--ink);color:#cfc5bc;padding:40px 0;font-size:.82rem;text-align:center}
+footer .logo{color:#fff;display:inline-block;margin-bottom:12px}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr 1.6fr;background:var(--ink);padding:10px;gap:8px;padding-bottom:max(10px,env(safe-area-inset-bottom))}
+.bar a{display:flex;align-items:center;justify-content:center;gap:7px;color:#fff;text-decoration:none;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;padding:12px 6px;border:1px solid #4a403a;border-radius:99px}
+.bar a.wa{background:#fff;color:var(--ink);border-color:#fff;font-weight:500}
+.bar svg{width:16px;height:16px}
+[data-en]{}
+@media(min-width:760px){
+ body{padding-bottom:0}.bar{display:none}nav a.l{display:inline}
+ .intro{grid-template-columns:1fr 1fr;gap:70px}
+ .cards{grid-template-columns:repeat(4,1fr)}
+ .gal{grid-template-columns:repeat(4,1fr)}.gal figure:nth-child(5n+1){grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+ .quotes{grid-template-columns:repeat(2,1fr)}
+ .visit{grid-template-columns:1fr 1.2fr;align-items:center}
+}
+.card p,.card h3{text-shadow:0 1px 8px rgba(0,0,0,.4)}.list{columns:2;gap:24px;margin-top:22px;color:var(--soft)}.list li{margin:0 0 8px 18px;break-inside:avoid}.bar{grid-template-columns:1fr 1fr 1.6fr}</style></head><body>
+<header id="top"><a class="logo" href="#">VERÓNICA<small>NAILS & BEAUTY CENTER</small></a>
+<nav><a class="l" href="#servicios">Servicios</a><a class="l" href="#trabajos">Trabajos</a><a class="l" href="#visita">Contacto</a></nav></header>
+<section class="hero" style="padding:0"><img src="img/hero.svg" alt="Uñas de Verónica Nails & Beauty Center" fetchpriority="high" style="object-position:50% 40%">
+<div class="wrap"><div class="eyebrow">Uñas y estética · Benalmádena</div><h1>Todo para tus uñas de manos y pies.</h1><p>Técnica latina, productos de alta calidad. Calle Tenerife 1, Edificio Lorca, Arroyo de la Miel.</p>
+<a class="btn" href="https://wa.me/34652311793?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20quiero%20pedir%20cita%20en%20el%20Centro%20de%20U%C3%B1as%20y%20Est%C3%A9tica%20Ver%C3%B3nica." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span>Pedir cita por WhatsApp</span></a></div></section>
+<section><div class="wrap intro"><div><div class="eyebrow">El centro</div><h2>Técnica latina y productos de alta calidad.</h2><p>Todo para tus uñas de manos y pies con técnica latina. Depilación con hilo y cera. Productos de alta calidad.</p><p>Solo con cita previa.</p><div class="stat"><div><b>5,0 ★</b><span>209 reseñas en Booksy</span></div><div><b>Cita</b><span>Solo con cita previa</span></div></div></div>
+<div class="ph"><img src="img/portada.svg" alt="Manicura nude con rosa blanca" loading="lazy"></div></div></section>
+<section class="svc" id="servicios"><div class="wrap sec"><div class="eyebrow">Servicios</div><h2>Servicios</h2><div class="cards"><div class="card"><img src="img/manicura.svg" alt="Manicura semipermanente" loading="lazy"><div><h3>Manicura</h3><p>Manicura semi con nivelación desde 30 € · Manicura tradicional desde 20 €.</p></div></div><div class="card"><img src="img/gel.svg" alt="Uñas de gel" loading="lazy"><div><h3>Uñas de gel y acrílico</h3><p>Uñas nuevas de poly gel o acrílico desde 45 € · Relleno desde 35 €.</p></div></div><div class="card"><img src="img/pedicura.svg" alt="Pedicura semipermanente" loading="lazy"><div><h3>Pedicura spa</h3><p>Pedicura spa completa desde 35 € · Uñas encarnadas desde 40 €.</p></div></div><div class="card"><img src="img/tratamientos.svg" alt="Tratamientos faciales antes y después" loading="lazy"><div><h3>Estética</h3><p>Depilación con hilo y cera y tratamientos faciales.</p></div></div></div><ul class="list"><li>Manicura masculina 15 €</li><li>Pedicura spa masculina 35 €</li><li>Reparación uña gel o acrílico 5 €</li><li>Pintar pies semipermanente 25 €</li><li>Retirado de gel o acrílico 18 €</li></ul></div></section>
+<section id="trabajos"><div class="wrap sec"><div class="eyebrow">Trabajos reales</div><h2>Uñas hechas en el centro</h2><div class="gal"><figure><img src="img/azul.svg" alt="Manicura azul" loading="lazy"></figure><figure><img src="img/francesa.svg" alt="Manicura francesa" loading="lazy"></figure><figure><img src="img/nude.svg" alt="Uñas nude" loading="lazy"></figure><figure><img src="img/celeste.svg" alt="Manicura celeste" loading="lazy"></figure><figure><img src="img/verde.svg" alt="Manicura verde" loading="lazy"></figure><figure><img src="img/almendra.svg" alt="Uñas almendra" loading="lazy"></figure><figure><img src="img/dorado.svg" alt="Uñas doradas" loading="lazy"></figure><figure><img src="img/facial.svg" alt="Tratamiento facial" loading="lazy"></figure></div><a class="btn d" href="https://booksy.com/es-es/31577_veronica-nails-beauty-center-2024_salon-de-unas_29214_arroyo-de-la-miel" target="_blank" rel="noopener">Ver 209 reseñas en Booksy</a></div></section>
+<section class="rev" id="opiniones"><div class="wrap sec"><div class="eyebrow">Opiniones</div><h2>Lo que dicen las clientas</h2><div class="quotes"><blockquote><p>“Son encantadoras y para mí las mejores haciendo manicura te duran perfectas 4 semanas. Y me encanta como hacen pedicura, súper profesionales!”</p><cite>Alicia · Manicura semi</cite></blockquote><blockquote><p>“Muy profesional , buenos productos, todo muy limpio, trato excelente, muy recomendable 100%”</p><cite>Carla · Manicura semi</cite></blockquote><blockquote><p>“La chica que me ha hecho las uñas trabaja muy bien, me encantan mi uñas 💅”</p><cite>Balestrieri · Relleno poly gel</cite></blockquote></div><p class="note">Reseñas de clientes verificados en Booksy, copiadas literalmente.</p></div></section>
+<section id="visita"><div class="wrap visit"><div><div class="eyebrow">Contacto</div><h2 style="font-size:clamp(2.1rem,5vw,3.2rem);margin:10px 0 26px">Te esperamos en Arroyo de la Miel</h2>
+<dl><div><dt>Dirección</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=Ver%C3%B3nica%20Nails%20%26%20Beauty%20Center%2C%20Calle%20Tenerife%201%2C%20Edificio%20Lorca%2C%2029631%20Benalm%C3%A1dena" target="_blank" rel="noopener">Calle Tenerife, 1, Edificio Lorca, local 8<br>29631 Arroyo de la Miel, Benalmádena</a></dd></div>
+<div><dt>Horario</dt><dd>Lunes y jueves 9:00–19:30<br>Martes, miércoles y viernes 10:00–14:00 y 14:30–18:00<br>Sábado 10:00–14:00</dd></div>
+<div><dt>Contacto</dt><dd><a href="tel:+34652311793">+34 652 31 17 93</a></dd></div></dl>
+<a class="btn d" href="https://wa.me/34652311793?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20quiero%20pedir%20cita%20en%20el%20Centro%20de%20U%C3%B1as%20y%20Est%C3%A9tica%20Ver%C3%B3nica." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span>Pedir cita por WhatsApp</span></a></div>
+<iframe class="map" loading="lazy" title="Mapa" src="https://maps.google.com/maps?q=36.59785549%2C-4.53168433&z=16&output=embed"></iframe></div></section>
+<footer><div class="logo">VERÓNICA<small>NAILS & BEAUTY CENTER</small></div><p>Calle Tenerife, 1 · Edificio Lorca, local 8 · 29631 Benalmádena</p><p style="margin-top:8px">© 2026 Verónica Nails & Beauty Center</p></footer>
+<div class="bar"><a href="tel:+34652311793">Llamar</a><a href="https://www.google.com/maps/search/?api=1&query=Ver%C3%B3nica%20Nails%20%26%20Beauty%20Center%2C%20Calle%20Tenerife%201%2C%20Edificio%20Lorca%2C%2029631%20Benalm%C3%A1dena" target="_blank" rel="noopener">Cómo llegar</a><a class="wa" href="https://wa.me/34652311793?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20quiero%20pedir%20cita%20en%20el%20Centro%20de%20U%C3%B1as%20y%20Est%C3%A9tica%20Ver%C3%B3nica." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span>Cita · WhatsApp</span></a></div>
+<script>const h=document.getElementById('top');addEventListener('scroll',()=>h.classList.toggle('s',scrollY>60),{passive:true});</script>
+</body></html>
