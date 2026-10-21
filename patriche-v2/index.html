@@ -81,6 +81,29 @@ footer .logo{color:#fff;display:inline-block;margin-bottom:12px}
  .quotes{grid-template-columns:repeat(2,1fr)}
  .visit{grid-template-columns:1fr 1.2fr;align-items:center}
 }
+/* polish: carousel, lightbox, motion */
+.hero{overflow:hidden}.hero img{animation:kb 26s ease-in-out infinite alternate;transform-origin:50% 35%}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.12) translate(-1%,-1.5%)}}
+.hero:after{background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.12) 32%,rgba(0,0,0,.25) 55%,rgba(0,0,0,.72))!important}
+.hero h1,.hero p{text-shadow:0 2px 14px rgba(0,0,0,.35)}
+.car{position:relative;margin-top:38px}
+.gal.track{display:flex!important;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0;padding:0 0 4px;overscroll-behavior-x:contain}
+.gal.track::-webkit-scrollbar{display:none}
+.gal.track figure{flex:0 0 78%;scroll-snap-align:center;aspect-ratio:4/5;cursor:zoom-in;border-radius:4px;overflow:hidden;margin:0}
+.gal.track figure img{transition:transform .6s ease}.gal.track figure:hover img{transform:scale(1.04)}
+@media(min-width:700px){.gal.track figure{flex-basis:calc((100% - 20px)/3);scroll-snap-align:start}}
+.car .arr{display:none;position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:46px;height:46px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:var(--ink);font-size:22px;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.18)}
+.car .arr.p{left:-14px}.car .arr.n{right:-14px}.car .arr:disabled{opacity:.35;cursor:default}
+@media(hover:hover) and (min-width:700px){.car .arr{display:block}}
+.dots{display:flex;justify-content:center;gap:8px;margin:16px 0 4px}
+.dots button{width:8px;height:8px;border-radius:99px;border:0;padding:0;background:var(--sand);cursor:pointer;transition:width .3s,background .3s}
+.dots button.on{width:22px;background:var(--gold)}
+.lb{position:fixed;inset:0;z-index:60;background:rgba(10,8,7,.94);display:none;align-items:center;justify-content:center}
+.lb.o{display:flex}.lb img{width:auto;height:auto;max-width:94vw;max-height:86vh;object-fit:contain}
+.lb button{position:absolute;background:none;border:0;color:#fff;font-size:34px;cursor:pointer;padding:12px 18px}
+.lb .x{top:8px;right:8px}.lb .lp{left:4px;top:50%;transform:translateY(-50%)}.lb .ln{right:4px;top:50%;transform:translateY(-50%)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.hero img{animation:none}.rv{opacity:1;transform:none;transition:none}.gal.track{scroll-behavior:auto}.gal.track figure img{transition:none}}
 </style>
 </head>
 <body>
@@ -135,7 +158,7 @@ footer .logo{color:#fff;display:inline-block;margin-bottom:12px}
  <div class="wrap sec">
   <div class="eyebrow" data-i="gE">Trabajos reales</div>
   <h2 data-i="gT">Del salón a tu gran día</h2>
-  <div class="gal">
+  <div class="car"><button class="arr p" aria-label="Anterior">&#8249;</button><div class="gal track">
    <figure><img src="img/semirecogido-rizos.svg" alt="Semirecogido con rizos y adorno dorado" loading="lazy"></figure>
    <figure><img src="img/semirecogido-joya.svg" alt="Semirecogido con joya de pelo" loading="lazy"></figure>
    <figure><img src="img/corona-flores.svg" alt="Ondas con corona de flores" loading="lazy"></figure>
@@ -144,7 +167,7 @@ footer .logo{color:#fff;display:inline-block;margin-bottom:12px}
    <figure><img src="img/ondas-rubias.svg" alt="Ondas rubias" loading="lazy"></figure>
    <figure><img src="img/recogido-mono.svg" alt="Moño alto" loading="lazy"></figure>
    <figure><img src="img/melena-rubia.svg" alt="Melena rubia" loading="lazy"></figure>
-  </div>
+  </div><button class="arr n" aria-label="Siguiente">&#8250;</button><div class="dots"></div></div>
   <a class="btn d" href="https://www.instagram.com/patriche__hairdresser/" target="_blank" rel="noopener" data-i="ig">Más en Instagram @patriche__hairdresser</a>
  </div>
 </section>
@@ -203,5 +226,26 @@ bES.classList.toggle('on',l=='es');bEN.classList.toggle('on',l=='en');try{localS
 setL((()=>{try{return localStorage.lang}catch(e){}})()||'es');
 const h=document.getElementById('top');addEventListener('scroll',()=>h.classList.toggle('s',scrollY>60),{passive:true});
 </script>
-</body>
+<div class="lb" role="dialog" aria-modal="true"><button class="x" aria-label="Cerrar">&times;</button><button class="lp" aria-label="Anterior">&#8249;</button><img alt=""><button class="ln" aria-label="Siguiente">&#8250;</button></div><script>/* polish: carousel + lightbox + reveal (vanilla) */
+(()=>{const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+document.querySelectorAll('.car').forEach(c=>{const t=c.querySelector('.track'),fs=[...t.children],d=c.querySelector('.dots'),p=c.querySelector('.p'),n=c.querySelector('.n');
+ fs.forEach((f,i)=>{const b=document.createElement('button');b.setAttribute('aria-label',(i+1)+'/'+fs.length);b.onclick=()=>go(i);d.appendChild(b)});
+ const go=i=>t.scrollTo({left:fs[Math.max(0,Math.min(fs.length-1,i))].offsetLeft-t.offsetLeft,behavior:RM?'auto':'smooth'});
+ const cur=()=>{let k=0,m=1e9;fs.forEach((f,i)=>{const v=Math.abs(f.offsetLeft-t.offsetLeft-t.scrollLeft);if(v<m){m=v;k=i}});return k};
+ const upd=()=>{const k=cur();[...d.children].forEach((b,i)=>b.classList.toggle('on',i==k));p.disabled=t.scrollLeft<4;n.disabled=t.scrollLeft+t.clientWidth>=t.scrollWidth-4};
+ let r;t.addEventListener('scroll',()=>{cancelAnimationFrame(r);r=requestAnimationFrame(upd)},{passive:true});
+ p.onclick=()=>go(cur()-1);n.onclick=()=>go(cur()+1);addEventListener('resize',upd);upd();
+ const lb=document.querySelector('.lb'),li=lb.querySelector('img');let k=0;
+ const show=i=>{k=(i+fs.length)%fs.length;const im=fs[k].querySelector('img');li.src=im.src;li.alt=im.alt};
+ fs.forEach((f,i)=>f.onclick=()=>{show(i);lb.classList.add('o');document.body.style.overflow='hidden'});
+ const close=()=>{lb.classList.remove('o');document.body.style.overflow=''};
+ lb.querySelector('.x').onclick=close;lb.querySelector('.lp').onclick=e=>{e.stopPropagation();show(k-1)};lb.querySelector('.ln').onclick=e=>{e.stopPropagation();show(k+1)};
+ lb.onclick=e=>{if(e.target==lb)close()};
+ addEventListener('keydown',e=>{if(!lb.classList.contains('o'))return;if(e.key=='Escape')close();if(e.key=='ArrowLeft')show(k-1);if(e.key=='ArrowRight')show(k+1)});
+ let sx;lb.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});lb.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)show(k+(dx<0?1:-1))});
+});
+if(!RM&&'IntersectionObserver'in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px',threshold:.08});
+ document.querySelectorAll('section:not(.hero) .wrap>*,.card,.ph,.quotes blockquote,.car').forEach(el=>{el.classList.add('rv');io.observe(el)})}
+})();
+</script></body>
 </html>
