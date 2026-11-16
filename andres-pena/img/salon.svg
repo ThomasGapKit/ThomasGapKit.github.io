@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1125" viewBox="0 0 900 1125">
+  <rect width="900" height="1125" fill="#241c16"/>
+  <rect x="60" y="80" width="780" height="965" rx="6" fill="#352a20"/>
+  <text x="450" y="580" text-anchor="middle" fill="#d4b98a" font-family="Georgia,serif" font-size="42">Barbería tradicional</text>
+</svg>
