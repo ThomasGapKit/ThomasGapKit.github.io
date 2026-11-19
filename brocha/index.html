@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La Brocha de Oro · Estepona</title>
+<meta name="description" content="Pintores en Estepona: pintura de fachadas, interiores y murales. 4,6 en Google. Presupuesto por WhatsApp.">
+<meta property="og:title" content="La Brocha de Oro · Estepona">
+<meta property="og:image" content="img/hero.svg">
+<link rel="preload" as="image" href="img/hero.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d2a38;--soft:#5a6a78;--cream:#f4f1ea;--sand:#e4ddd2;--gold:#d4a017}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Jost,system-ui,sans-serif;font-weight:300;color:var(--ink);background:var(--cream);line-height:1.65;padding-bottom:72px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.1}
+a{color:inherit}img{display:block;width:100%;height:100%;object-fit:cover}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+header{position:fixed;inset:0 0 auto;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:16px 22px;color:#fff;transition:.3s}
+header.s{background:rgba(247,242,236,.96);color:var(--ink);box-shadow:0 1px 0 var(--sand);backdrop-filter:blur(6px)}
+.logo{font-family:"Cormorant Garamond",serif;font-size:1.35rem;letter-spacing:.32em;text-decoration:none}
+.logo small{display:block;font-family:Jost;font-size:.58rem;letter-spacing:.42em;margin-top:-2px}
+nav{display:flex;gap:22px;align-items:center;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+nav a.l{text-decoration:none;display:none}
+.hero{position:relative;height:100svh;min-height:560px;color:#fff;display:flex;align-items:flex-end}
+.hero img{position:absolute;inset:0;object-position:50% 25%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,0) 30%,rgba(0,0,0,.65))}
+.hero .wrap{position:relative;z-index:1;padding-bottom:64px;width:100%}
+.eyebrow{font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.hero .eyebrow{color:#f0dcc0}
+.hero h1{font-size:clamp(2.7rem,9vw,5.6rem);margin:12px 0 14px;max-width:14ch}
+.hero p{max-width:34rem;font-size:1.05rem;opacity:.92}
+.btn{display:inline-flex;align-items:center;gap:10px;margin-top:26px;background:#fff;color:var(--ink);text-decoration:none;padding:15px 26px;border-radius:99px;font-weight:500;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+.btn.d{background:var(--ink);color:#fff}
+.btn svg{width:18px;height:18px}
+section{padding:88px 0}
+.intro{display:grid;gap:40px;align-items:center}
+.intro h2,.sec h2{font-size:clamp(2.1rem,5vw,3.2rem);margin:10px 0 18px}
+.intro p{color:var(--soft);margin-bottom:14px}
+.intro .ph{aspect-ratio:4/5;border-radius:2px;overflow:hidden}
+.stat{display:flex;gap:34px;margin-top:26px;flex-wrap:wrap}.stat b{font-family:"Cormorant Garamond";font-size:2.2rem;font-weight:500;display:block;line-height:1}.stat span{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.svc{background:#fff}
+.cards{display:grid;gap:18px;margin-top:38px}
+.card{position:relative;overflow:hidden;aspect-ratio:3/4;color:#fff;border-radius:2px}
+.card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.72))}
+.card img{transition:transform .8s}.card:hover img{transform:scale(1.04)}
+.card div{position:absolute;z-index:1;left:22px;right:22px;bottom:22px}
+.card h3{font-size:2rem}.card p{font-size:.92rem;opacity:.9}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:38px}
+.gal figure{overflow:hidden;aspect-ratio:3/4;border-radius:2px}
+.rev{background:var(--sand)}
+.quotes{display:grid;gap:18px;margin-top:38px}
+blockquote{background:var(--cream);padding:30px 28px;border-radius:2px}
+blockquote p{font-family:"Cormorant Garamond";font-size:1.3rem;font-style:italic;line-height:1.4}
+blockquote cite{display:block;margin-top:16px;font-style:normal;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.note{font-size:.8rem;color:var(--soft);margin-top:18px}
+.visit{display:grid;gap:34px}
+.visit dl{display:grid;gap:18px}.visit dt{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}.visit dd a{text-decoration:none;border-bottom:1px solid var(--sand)}
+.map{aspect-ratio:4/3;border:0;width:100%;filter:grayscale(.4)}
+footer{background:var(--ink);color:#cfc5bc;padding:40px 0;font-size:.82rem;text-align:center}
+footer .logo{color:#fff;display:inline-block;margin-bottom:12px}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr 1.6fr;background:var(--ink);padding:10px;gap:8px;padding-bottom:max(10px,env(safe-area-inset-bottom))}
+.bar a{display:flex;align-items:center;justify-content:center;gap:7px;color:#fff;text-decoration:none;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;padding:12px 6px;border:1px solid #4a403a;border-radius:99px}
+.bar a.wa{background:#fff;color:var(--ink);border-color:#fff;font-weight:500}
+.bar svg{width:16px;height:16px}
+.card p,.card h3{text-shadow:0 1px 8px rgba(0,0,0,.4)}
+.list{columns:2;gap:24px;margin-top:22px;color:var(--soft)}.list li{margin:0 0 8px 18px;break-inside:avoid}
+.team{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:38px}
+.team figure{margin:0}
+.team img{aspect-ratio:1;object-fit:cover;border-radius:2px}
+.team figcaption{margin-top:8px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+@media(min-width:760px){
+ body{padding-bottom:0}.bar{display:none}nav a.l{display:inline}
+ .intro{grid-template-columns:1fr 1fr;gap:70px}
+ .cards.c3{grid-template-columns:repeat(3,1fr)}
+ .cards.c4{grid-template-columns:repeat(4,1fr)}
+ .gal{grid-template-columns:repeat(4,1fr)}.gal figure:nth-child(5n+1){grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+ .quotes{grid-template-columns:repeat(2,1fr)}
+ .visit{grid-template-columns:1fr 1.2fr;align-items:center}
+ .team{grid-template-columns:repeat(3,1fr)}
+}
+</style></head><body>
+<header id="top"><a class="logo" href="#">LA BROCHA DE ORO<small>PINTORES · ESTEPONA</small></a>
+<nav><a class="l" href="#servicios">Servicios</a><a class="l" href="#trabajos">Trabajos</a><a class="l" href="#visita">Contacto</a></nav></header>
+<section class="hero" style="padding:0"><img src="img/hero.svg" alt="Pintura de fachada con plataforma elevadora, La Brocha de Oro Estepona" fetchpriority="high" style="object-position:50% 45%">
+<div class="wrap"><div class="eyebrow">Pintores · Estepona</div>
+<h1>Fachadas, interiores y murales, en Estepona.</h1>
+<p>Pintores en Estepona. 4,6 en Google, con 9 reseñas.</p>
+<a class="btn" href="https://wa.me/34675919887?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20quiero%20pedir%20un%20presupuesto%20en%20La%20Brocha%20de%20Oro%20Estepona." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span>Pedir presupuesto por WhatsApp</span></a></div></section>
+<section><div class="wrap intro"><div><div class="eyebrow">El oficio</div>
+<h2>La Brocha de Oro.</h2>
+<p>Equipo de pintura en Estepona: fachadas, interiores y murales decorativos, con el trabajo hecho en casa y en la calle.</p><p>No hemos encontrado un horario publicado. Escríbenos por WhatsApp y te damos un presupuesto.</p>
+<div class="stat"><div><b>4,6 ★</b><span>9 reseñas en Google</span></div></div>
+</div>
+<div class="ph"><img src="img/intro.svg" alt="Mural en interior, pintado por La Brocha de Oro" loading="lazy"></div></div></section>
+<section class="svc" id="servicios"><div class="wrap sec"><div class="eyebrow">Servicios</div>
+<h2>Trabajos de pintura</h2>
+<div class="cards c3"><div class="card"><img src="img/c1.svg" alt="Pintura de fachada en un pueblo, La Brocha de Oro" loading="lazy"><div><h3>Fachadas</h3><p>Pintura de fachadas y exteriores, con andamio o plataforma cuando el trabajo lo pide.</p></div></div><div class="card"><img src="img/c2.svg" alt="Mural decorativo pintado por La Brocha de Oro" loading="lazy"><div><h3>Murales</h3><p>Murales decorativos en interiores, pintados a mano en la propia pared.</p></div></div><div class="card"><img src="img/c3.svg" alt="Preparación de un mural interior" loading="lazy"><div><h3>Interiores</h3><p>Pintura de interiores y preparación de la pared antes del acabado.</p></div></div></div>
+
+</div></section>
+<section id="trabajos"><div class="wrap sec"><div class="eyebrow">Trabajos reales</div><h2>Trabajos reales</h2>
+<div class="gal"><figure><img src="img/hero.svg" alt="Fachada en plataforma elevadora" loading="lazy"></figure><figure><img src="img/c1.svg" alt="Pintura de fachada en el pueblo" loading="lazy"></figure><figure><img src="img/intro.svg" alt="Mural acabado" loading="lazy"></figure><figure><img src="img/g4.svg" alt="Preparación del mural" loading="lazy"></figure></div>
+
+</div></section>
+
+<section class="rev" id="opiniones"><div class="wrap sec"><div class="eyebrow">Opiniones</div><h2>Lo que dicen los clientes</h2>
+<div class="quotes"><blockquote><p>“Muy profesionales”</p><cite>José Caba · Google, abril 2023</cite></blockquote></div>
+<p class="note">Reseña pública en Google, copiada literalmente.</p>
+</div></section>
+<section id="visita"><div class="wrap visit"><div><div class="eyebrow">Contacto</div>
+<h2 style="font-size:clamp(2.1rem,5vw,3.2rem);margin:10px 0 26px">Trabajamos en Estepona</h2>
+<dl><div><dt>Dirección</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=La%20Brocha%20de%20Oro%20Estepona%20pintores" target="_blank" rel="noopener">Estepona, Costa del Sol</a></dd></div>
+<div><dt>Horario</dt><dd>Horario a convenir. Escríbenos por WhatsApp y te damos un presupuesto.</dd></div>
+<div><dt>Contacto</dt><dd><a href="tel:+34675919887">+34 675 91 98 87</a></dd></div></dl>
+<a class="btn d" href="https://wa.me/34675919887?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20quiero%20pedir%20un%20presupuesto%20en%20La%20Brocha%20de%20Oro%20Estepona." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span>Pedir presupuesto por WhatsApp</span></a></div>
+<iframe class="map" loading="lazy" title="Mapa" src="https://maps.google.com/maps?q=La%20Brocha%20de%20Oro%20Estepona%20pintores&z=16&output=embed"></iframe></div></section>
+<footer><div class="logo">LA BROCHA DE ORO<small>PINTORES · ESTEPONA</small></div>
+<p>Estepona · Costa del Sol</p>
+<p style="margin-top:8px">© 2026 La Brocha de Oro Estepona</p></footer>
+<div class="bar"><a href="tel:+34675919887">Llamar</a>
+<a href="https://www.google.com/maps/search/?api=1&query=La%20Brocha%20de%20Oro%20Estepona%20pintores" target="_blank" rel="noopener">Cómo llegar</a>
+<a class="wa" href="https://wa.me/34675919887?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20quiero%20pedir%20un%20presupuesto%20en%20La%20Brocha%20de%20Oro%20Estepona." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span>Presupuesto · WhatsApp</span></a></div>
+<script>const h=document.getElementById('top');addEventListener('scroll',()=>h.classList.toggle('s',scrollY>60),{passive:true});</script>
+</body></html>
