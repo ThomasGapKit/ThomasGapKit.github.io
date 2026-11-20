@@ -1,119 +1,299 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Broski barber · Fuengirola</title>
-<meta name="description" content="Barbería en Fuengirola: degradado, corte y barba, corte de niños y tratamientos faciales. 5,0 en Booksy. Cita por WhatsApp.">
-<meta property="og:title" content="Broski barber · Fuengirola">
-<meta property="og:image" content="img/hero.svg">
-<link rel="preload" as="image" href="img/hero.svg">
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Broski Barber · Barbería en Fuengirola · Cl. Jacinto Benavente 9</title>
+<meta name="description" content="Broski Barber, Cl. Jacinto Benavente 9, local B, Fuengirola. Degradados, corte y barba, cortes de niños y limpieza facial. 5,0 en Booksy (210 reseñas). Reserva por Booksy o WhatsApp.">
+<meta name="theme-color" content="#0d0d0c">
+<meta property="og:title" content="Broski Barber · Fuengirola">
+<meta property="og:description" content="Degradados, corte y barba y faciales en Cl. Jacinto Benavente 9, Fuengirola. Reserva en Booksy o por WhatsApp.">
+<meta property="og:image" content="img/hero-d.svg">
+<meta name="robots" content="noindex">
+<link rel="preload" as="image" href="img/hero-m.svg" media="(max-width:759px)">
+<link rel="preload" as="image" href="img/hero-d.svg" media="(min-width:760px)">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#121110;--soft:#655e58;--cream:#f4f1ec;--sand:#e3ddd4;--gold:#d0b48a}
+:root{--bg:#0d0d0c;--bg2:#161614;--card:#1d1d1a;--ink:#f3efe7;--soft:#a39d92;--gold:#cfa95e;--gold2:#e6c886;--line:#2c2b27;--wa:#25D366}
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{font-family:Jost,system-ui,sans-serif;font-weight:300;color:var(--ink);background:var(--cream);line-height:1.65;padding-bottom:72px}
-h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.1}
+body{font-family:Inter,system-ui,sans-serif;font-weight:300;color:var(--ink);background:var(--bg);line-height:1.6;padding-bottom:78px;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Oswald,Impact,sans-serif;font-weight:500;line-height:1.05;text-transform:uppercase;letter-spacing:.01em}
 a{color:inherit}img{display:block;width:100%;height:100%;object-fit:cover}
-.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
-header{position:fixed;inset:0 0 auto;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:16px 22px;color:#fff;transition:.3s}
-header.s{background:rgba(247,242,236,.96);color:var(--ink);box-shadow:0 1px 0 var(--sand);backdrop-filter:blur(6px)}
-.logo{font-family:"Cormorant Garamond",serif;font-size:1.35rem;letter-spacing:.32em;text-decoration:none}
-.logo small{display:block;font-family:Jost;font-size:.58rem;letter-spacing:.42em;margin-top:-2px}
-nav{display:flex;gap:22px;align-items:center;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
-nav a.l{text-decoration:none;display:none}
-.hero{position:relative;height:100svh;min-height:560px;color:#fff;display:flex;align-items:flex-end}
-.hero img{position:absolute;inset:0;object-position:50% 25%}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,0) 30%,rgba(0,0,0,.65))}
-.hero .wrap{position:relative;z-index:1;padding-bottom:64px;width:100%}
-.eyebrow{font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
-.hero .eyebrow{color:#f0dcc0}
-.hero h1{font-size:clamp(2.7rem,9vw,5.6rem);margin:12px 0 14px;max-width:14ch}
-.hero p{max-width:34rem;font-size:1.05rem;opacity:.92}
-.btn{display:inline-flex;align-items:center;gap:10px;margin-top:26px;background:#fff;color:var(--ink);text-decoration:none;padding:15px 26px;border-radius:99px;font-weight:500;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
-.btn.d{background:var(--ink);color:#fff}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+header{position:fixed;inset:0 0 auto;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:10px 14px;padding-top:max(10px,env(safe-area-inset-top));transition:.3s;background:linear-gradient(rgba(0,0,0,.55),transparent)}
+header.s{background:rgba(13,13,12,.94);box-shadow:0 1px 0 var(--line);backdrop-filter:blur(8px)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo img{width:46px;height:46px;border-radius:50%;border:1px solid rgba(207,169,94,.45)}
+.logo b{font-family:Oswald;font-weight:500;letter-spacing:.18em;font-size:1rem;line-height:1}
+.logo b small{display:block;font-size:.58rem;letter-spacing:.42em;color:var(--gold);margin-top:4px;font-weight:400}
+nav{display:flex;gap:10px;align-items:center;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase}
+nav a.l{text-decoration:none;display:none}nav a.l:hover{color:var(--gold)}
+.lang{border:1px solid rgba(255,255,255,.4);border-radius:99px;display:flex;overflow:hidden}
+.lang button{background:none;border:0;color:inherit;font:500 .7rem Inter;letter-spacing:.1em;padding:7px 11px;cursor:pointer}
+.lang button.on{background:var(--gold);color:#111}
+.hbk{display:none;align-items:center;gap:6px;background:var(--gold);color:#111!important;text-decoration:none;font:600 .72rem Inter;letter-spacing:.1em;padding:9px 16px;border-radius:99px;text-transform:uppercase}
+.hero{position:relative;height:100svh;min-height:600px;display:flex;align-items:flex-end;overflow:hidden}
+.hero picture,.hero picture img{position:absolute;inset:0}
+.hero img{object-position:50% 55%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.1) 28%,rgba(0,0,0,.7) 55%,rgba(0,0,0,.92) 85%)}
+.hero .wrap{position:relative;z-index:1;padding-bottom:100px;width:100%}
+.hero .eyebrow,.hero h1,.hero p{text-shadow:0 2px 14px rgba(0,0,0,.6)}
+.eyebrow{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.hero h1{font-size:clamp(3rem,13vw,6.6rem);margin:12px 0 14px;max-width:11ch}
+.hero h1 em{font-style:normal;color:var(--gold2)}
+.hero p{max-width:33rem;font-size:1.02rem;color:#ddd6ca}
+.rating{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.rating span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(6px);border-radius:99px;padding:6px 13px;font-size:.78rem}
+.rating span b{color:var(--gold2);font-weight:500}
+.ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;padding:15px 24px;border-radius:99px;font-weight:600;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
 .btn svg{width:18px;height:18px}
-section{padding:88px 0}
-.intro{display:grid;gap:40px;align-items:center}
-.intro h2,.sec h2{font-size:clamp(2.1rem,5vw,3.2rem);margin:10px 0 18px}
-.intro p{color:var(--soft);margin-bottom:14px}
-.intro .ph{aspect-ratio:4/5;border-radius:2px;overflow:hidden}
-.stat{display:flex;gap:34px;margin-top:26px;flex-wrap:wrap}.stat b{font-family:"Cormorant Garamond";font-size:2.2rem;font-weight:500;display:block;line-height:1}.stat span{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
-.svc{background:#fff}
-.cards{display:grid;gap:18px;margin-top:38px}
-.card{position:relative;overflow:hidden;aspect-ratio:3/4;color:#fff;border-radius:2px}
-.card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.72))}
-.card img{transition:transform .8s}.card:hover img{transform:scale(1.04)}
-.card div{position:absolute;z-index:1;left:22px;right:22px;bottom:22px}
-.card h3{font-size:2rem}.card p{font-size:.92rem;opacity:.9}
-.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:38px}
-.gal figure{overflow:hidden;aspect-ratio:3/4;border-radius:2px}
-.rev{background:var(--sand)}
-.quotes{display:grid;gap:18px;margin-top:38px}
-blockquote{background:var(--cream);padding:30px 28px;border-radius:2px}
-blockquote p{font-family:"Cormorant Garamond";font-size:1.3rem;font-style:italic;line-height:1.4}
-blockquote cite{display:block;margin-top:16px;font-style:normal;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
-.note{font-size:.8rem;color:var(--soft);margin-top:18px}
-.visit{display:grid;gap:34px}
-.visit dl{display:grid;gap:18px}.visit dt{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}.visit dd a{text-decoration:none;border-bottom:1px solid var(--sand)}
-.map{aspect-ratio:4/3;border:0;width:100%;filter:grayscale(.4)}
-footer{background:var(--ink);color:#cfc5bc;padding:40px 0;font-size:.82rem;text-align:center}
-footer .logo{color:#fff;display:inline-block;margin-bottom:12px}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr 1.6fr;background:var(--ink);padding:10px;gap:8px;padding-bottom:max(10px,env(safe-area-inset-bottom))}
-.bar a{display:flex;align-items:center;justify-content:center;gap:7px;color:#fff;text-decoration:none;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;padding:12px 6px;border:1px solid #4a403a;border-radius:99px}
-.bar a.wa{background:#fff;color:var(--ink);border-color:#fff;font-weight:500}
-.bar svg{width:16px;height:16px}
-.card p,.card h3{text-shadow:0 1px 8px rgba(0,0,0,.4)}
-.list{columns:2;gap:24px;margin-top:22px;color:var(--soft)}.list li{margin:0 0 8px 18px;break-inside:avoid}
-.team{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:38px}
-.team figure{margin:0}
-.team img{aspect-ratio:1;object-fit:cover;border-radius:2px}
-.team figcaption{margin-top:8px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+.btn.bk{background:var(--gold);color:#111}
+.btn.wa{background:var(--wa);color:#fff}
+.btn.o{border:1px solid var(--gold);color:var(--gold)}
+section{padding:80px 0}
+h2{font-size:clamp(2.2rem,7vw,3.6rem);margin:10px 0 18px}
+.lead{color:var(--soft);max-width:38rem}
+.intro{display:grid;gap:36px;align-items:center}
+.intro .ph{position:relative;aspect-ratio:9/12;border-radius:4px;overflow:hidden}
+.intro .ph img{object-position:50% 40%}
+.stat{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:28px}
+.stat div{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:16px 14px}
+.stat b{font-family:Oswald;font-size:2rem;font-weight:500;display:block;line-height:1;color:var(--gold2)}
+.stat span{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.feat{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.feat span{font-size:.78rem;border:1px solid var(--line);border-radius:99px;padding:6px 12px;color:#d7d1c6}
+.svc{background:var(--bg2)}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:34px}
+.card{position:relative;overflow:hidden;aspect-ratio:4/5;border-radius:4px}
+.card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.85))}
+.card div{position:absolute;z-index:1;left:14px;right:14px;bottom:14px}
+.card h3{font-size:1.3rem}.card p{font-size:.8rem;color:var(--gold2);letter-spacing:.06em}
+.menu{margin-top:40px;display:grid;gap:28px}
+.grp h3{font-size:1.15rem;color:var(--gold);letter-spacing:.14em;padding-bottom:10px;border-bottom:1px solid var(--gold)}
+.item{display:grid;grid-template-columns:1fr auto;gap:4px 14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.item b{font-weight:500;font-size:.98rem}
+.item .pr{font-family:Oswald;font-size:1.25rem;color:var(--gold2);text-align:right;white-space:nowrap}
+.item p{grid-column:1/-1;font-size:.86rem;color:var(--soft)}
+.item small{color:var(--soft);font-size:.78rem;letter-spacing:.04em}
+.pnote{margin-top:24px;font-size:.84rem;color:var(--soft)}
+.pnote a{color:var(--gold);font-weight:500}
+.team{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:34px}
+.team figure{background:var(--card);border-radius:4px;overflow:hidden}
+.team .im{aspect-ratio:1}
+.team figcaption{padding:12px 14px;font-family:Oswald;letter-spacing:.14em;text-transform:uppercase;font-size:1rem}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:34px}
+.gal figure{overflow:hidden;aspect-ratio:4/5;border-radius:4px;background:var(--card)}
+.gal figure.m{display:none}
+.gal img{transition:transform .8s}.gal figure:hover img{transform:scale(1.05)}
+.iglink{display:inline-block;margin-top:22px;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--gold);border-bottom:1px solid var(--gold);padding-bottom:3px}
+.rev{background:var(--bg2)}
+.scores{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.scores a{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:16px 20px;min-width:150px;text-decoration:none}
+.scores b{font-family:Oswald;font-size:2rem;font-weight:500;color:var(--gold2);line-height:1}
+.scores span{display:block;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.quotes{display:grid;gap:12px;margin-top:28px}
+blockquote{background:var(--card);padding:24px 22px;border-radius:4px;border-left:3px solid var(--gold)}
+blockquote .st{color:var(--gold);letter-spacing:.2em;font-size:.8rem}
+blockquote p{font-size:1.02rem;line-height:1.5;margin-top:8px;color:#ece6db}
+blockquote cite{display:block;margin-top:12px;font-style:normal;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--soft)}
+.note{font-size:.78rem;color:var(--soft);margin-top:16px}
+.visit{display:grid;gap:30px}
+.visit dl{display:grid;gap:20px;margin-top:8px}.visit dt{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:500}.visit dd{font-size:1rem;margin-top:3px}.visit dd a{text-decoration:none;border-bottom:1px solid var(--line)}
+.hrs{display:grid;grid-template-columns:auto 1fr;gap:4px 18px}
+.map{aspect-ratio:4/3;min-height:280px;background:var(--card);border:0;width:100%;border-radius:4px;filter:grayscale(.6) invert(.9) hue-rotate(180deg) contrast(.9)}
+footer{border-top:1px solid var(--line);color:var(--soft);padding:40px 0 36px;font-size:.82rem;text-align:center}
+footer img{width:84px;height:84px;margin:0 auto 14px;border-radius:50%}
+footer a{color:var(--ink)}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;background:rgba(13,13,12,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px;gap:8px;padding-bottom:max(10px,env(safe-area-inset-bottom))}
+.bar a{display:flex;align-items:center;justify-content:center;gap:7px;text-decoration:none;font-size:.76rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:14px 6px;border-radius:99px}
+.bar a.bk{background:var(--gold);color:#111}.bar a.wa{background:var(--wa);color:#fff}
+.bar svg{width:17px;height:17px}
 @media(min-width:760px){
- body{padding-bottom:0}.bar{display:none}nav a.l{display:inline}
- .intro{grid-template-columns:1fr 1fr;gap:70px}
- .cards.c3{grid-template-columns:repeat(3,1fr)}
- .cards.c4{grid-template-columns:repeat(4,1fr)}
- .gal{grid-template-columns:repeat(4,1fr)}.gal figure:nth-child(5n+1){grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
- .quotes{grid-template-columns:repeat(2,1fr)}
+ body{padding-bottom:0}.bar{display:none}nav{gap:22px}nav a.l{display:inline}.hbk{display:inline-flex}
+ header{padding:14px 28px}
+ .hero .wrap{padding-bottom:72px}
+ .hero:after{background:linear-gradient(90deg,rgba(0,0,0,.8),rgba(0,0,0,.35) 55%,rgba(0,0,0,.1)),linear-gradient(180deg,rgba(0,0,0,.5),transparent 25%)}
+ .gal figure.m{display:block}
+ .intro{grid-template-columns:1fr 1.1fr;gap:70px}
+ .cards{grid-template-columns:repeat(4,1fr);gap:14px}
+ .menu{grid-template-columns:repeat(3,1fr);gap:40px;align-items:start}
+ .team{grid-template-columns:repeat(6,1fr)}
+ .gal{grid-template-columns:repeat(4,1fr);gap:10px}
+ .gal figure:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+ .quotes{grid-template-columns:repeat(3,1fr)}
  .visit{grid-template-columns:1fr 1.2fr;align-items:center}
- .team{grid-template-columns:repeat(3,1fr)}
 }
-</style></head><body>
-<header id="top"><a class="logo" href="#">BROSKI<small>BARBER · FUENGIROLA</small></a>
-<nav><a class="l" href="#servicios">Servicios</a><a class="l" href="#trabajos">Trabajos</a><a class="l" href="#visita">Contacto</a></nav></header>
-<section class="hero" style="padding:0"><img src="img/hero.svg" alt="Interior de Broski barber en Fuengirola" fetchpriority="high" style="object-position:50% 40%">
-<div class="wrap"><div class="eyebrow">Barbería · Fuengirola</div>
-<h1>Degradados y barba, en Benavente 9.</h1>
-<p>Calle Jacinto Benavente, 9, local B. 5,0 en Booksy, con más de 200 reseñas.</p>
-<a class="btn" href="https://wa.me/34631111270?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20quiero%20pedir%20cita%20en%20Broski%20barber." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span>Pedir cita por WhatsApp</span></a></div></section>
-<section><div class="wrap intro"><div><div class="eyebrow">La barbería</div>
-<h2>Broski barber.</h2>
-<p>Barbería en el centro de Fuengirola: corte degradado, corte y barba, corte de niños hasta 10 años, tinte de barba, cejas con hilo y tratamientos faciales.</p><p>Abiertos todos los días, de 10:00 a 21:00.</p>
-<div class="stat"><div><b>5,0 ★</b><span>206 reseñas en Booksy</span></div><div><b>10:00–21:00</b><span>todos los días</span></div></div>
+</style>
+</head>
+<body>
+<header id="top">
+ <a class="logo" href="#"><img src="img/logo.svg" alt="Logo Broski Barbers"><b>BROSKI<small>BARBERS</small></b></a>
+ <nav>
+  <a class="l" href="#servicios" data-i="nS">Servicios</a>
+  <a class="l" href="#equipo" data-i="nT">Equipo</a>
+  <a class="l" href="#visita" data-i="nV">Cómo llegar</a>
+  <div class="lang" role="group" aria-label="Idioma / Language"><button id="bES" onclick="setL('es')">ES</button><button id="bEN" onclick="setL('en')">EN</button></div>
+  <a class="hbk" href="https://booksy.com/es-es/100602_broski-barber_barberia_29244_fuengirola" target="_blank" rel="noopener" data-i="hB">Reservar</a>
+ </nav>
+</header>
+
+<section class="hero" style="padding:0">
+ <picture>
+  <source media="(min-width:760px)" srcset="img/hero-d.svg">
+  <img src="img/hero-m.svg" alt="Interior de Broski Barber en Fuengirola, con sus sillones y techo de luces hexagonales" fetchpriority="high">
+ </picture>
+ <div class="wrap">
+  <div class="eyebrow" data-i="hE">Barbería · Fuengirola</div>
+  <h1><span data-i="hT1">Fades, barba</span> <em data-i="hT2">y estilo.</em></h1>
+  <p data-i="hP">Degradados, corte y barba, cortes de niños y limpieza facial en Cl. Jacinto Benavente 9, Fuengirola. Abierto todos los días.</p>
+  <div class="rating"><span><b>★ 5,0</b> · Booksy (210)</span><span><b>★ 4,9</b> · Google (253)</span></div>
+  <div class="ctas">
+   <a class="btn bk" href="https://booksy.com/es-es/100602_broski-barber_barberia_29244_fuengirola" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg><span data-i="cB">Reservar en Booksy</span></a>
+   <a class="btn wa wa-link" href="https://wa.me/34631111270" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.8.4 3.6 3.6 0 0 0-1.1 2.6 6.2 6.2 0 0 0 1.3 3.3 14.3 14.3 0 0 0 5.5 4.8c2 .9 2.8.9 3.8.8a3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4M12 21.8a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8M20.5 3.5A11.8 11.8 0 0 0 1.9 17.7L.2 24l6.4-1.7A11.8 11.8 0 0 0 23.8 12a11.7 11.7 0 0 0-3.4-8.4"/></svg><span data-i="cW">WhatsApp</span></a>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap intro">
+  <div class="ph"><img src="img/shop.svg" alt="Barbero de Broski trabajando en el local de Fuengirola" loading="lazy"></div>
+  <div>
+   <div class="eyebrow" data-i="aE">La barbería</div>
+   <h2 data-i="aT">Tu barbería en el centro de Fuengirola</h2>
+   <p class="lead" data-i="aP">Seis barberos, un local moderno y cuidado, y cortes de cualquier estilo: degradados, perfilados, barba, color de barba y tratamientos faciales. Reservas online en Booksy o por WhatsApp.</p>
+   <div class="stat"><div><b>5,0★</b><span data-i="s1">210 en Booksy</span></div><div><b>4,9★</b><span data-i="s2">253 en Google</span></div><div><b>7/7</b><span data-i="s3">Todos los días</span></div></div>
+   <div class="feat"><span data-i="f1">Pago con tarjeta</span><span data-i="f2">Wi-Fi</span><span data-i="f3">Ideal para niños</span><span data-i="f4">Accesible</span><span data-i="f5">Programa de fidelidad</span><span data-i="f6">Se admiten mascotas</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="svc" id="servicios">
+ <div class="wrap">
+  <div class="eyebrow" data-i="sE">Servicios y precios</div>
+  <h2 data-i="sT">Lo que hacemos</h2>
+  <div class="cards">
+   <div class="card"><img src="img/cut.svg" alt="Degradado con tupé hecho en Broski" loading="lazy"><div><h3 data-i="k1">Degradado</h3><p data-i="k1p">desde 15 €</p></div></div>
+   <div class="card"><img src="img/beard.svg" alt="Corte y arreglo de barba en Broski" loading="lazy"><div><h3 data-i="k2">Corte y barba</h3><p>20 €</p></div></div>
+   <div class="card"><img src="img/kids.svg" alt="Corte de niño hecho en Broski" loading="lazy" style="object-position:50% 30%"><div><h3 data-i="k3">Niños</h3><p>13 €</p></div></div>
+   <div class="card"><img src="img/facial.svg" alt="Mascarilla facial en Broski" loading="lazy"><div><h3 data-i="k4">Facial</h3><p data-i="k4p">desde 10 €</p></div></div>
+  </div>
+
+  <div class="menu">
+   <div class="grp"><h3 data-i="g1">Cortes</h3>
+    <div class="item"><b data-i="i1">Corte degradado</b><span class="pr">15 €</span><p data-i="i1p">Lavado y corte completo de cualquier estilo, perfilado y peinado.</p><small>35 min</small></div>
+    <div class="item"><b data-i="i2">Corte y barba</b><span class="pr">20 €</span><p data-i="i2p">Corte de pelo y peinado, con arreglo de barba completo.</p><small>45 min</small></div>
+    <div class="item"><b data-i="i3">Corte niños</b><span class="pr">13 €</span><p data-i="i3p">Hasta 10 años.</p><small>30 min</small></div>
+   </div>
+   <div class="grp"><h3 data-i="g2">Barba y cejas</h3>
+    <div class="item"><b data-i="i4">Arreglo de barba</b><span class="pr" data-i="i4x">desde 13 €</span><p data-i="i4p">Arreglo, perfilado y productos: after shave, aceite o fijación.</p><small>20 min</small></div>
+    <div class="item"><b data-i="i5">Color de barba</b><span class="pr">13 €</span><p data-i="i5p">Elimina las canas para una barba con más cuerpo.</p><small>30 min</small></div>
+    <div class="item"><b data-i="i6">Cejas con hilo</b><span class="pr">6 €</span><small>10 min</small></div>
+   </div>
+   <div class="grp"><h3 data-i="g3">Facial y VIP</h3>
+    <div class="item"><b>VIP Premium</b><span class="pr">40 €</span><p data-i="i7p">Corte, arreglo de barba y limpieza facial completa con vapor de ozono y extracción de puntos negros.</p><small>1 h 15 min</small></div>
+    <div class="item"><b>VIP</b><span class="pr">30 €</span><p data-i="i8p">Corte, arreglo de barba y limpieza facial con mascarillas hidratantes.</p><small>1 h 5 min</small></div>
+    <div class="item"><b data-i="i9">Limpieza facial premium</b><span class="pr">25 €</span><p data-i="i9p">Limpieza profunda, exfoliación y extracción.</p><small>30 min</small></div>
+    <div class="item"><b>Facial express</b><span class="pr">15 €</span><p data-i="i10p">Espuma exfoliante, toalla caliente, masaje, mascarilla y parches de ojos.</p><small>20 min</small></div>
+    <div class="item"><b data-i="i11">Mascarilla negra</b><span class="pr">10 €</span><p data-i="i11p">Toalla caliente y mascarilla negra contra los puntos negros.</p><small>10 min</small></div>
+   </div>
+  </div>
+  <p class="pnote"><span data-i="pn">Precios y duraciones tal como aparecen en Booksy.</span> <a href="https://booksy.com/es-es/100602_broski-barber_barberia_29244_fuengirola" target="_blank" rel="noopener" data-i="pnl">Ver huecos libres →</a></p>
+ </div>
+</section>
+
+<section id="equipo">
+ <div class="wrap">
+  <div class="eyebrow" data-i="tE">El equipo</div>
+  <h2 data-i="tT">Tus barberos</h2>
+  <p class="lead" data-i="tP">Elige con quién quieres tu cita al reservar en Booksy.</p>
+  <div class="team">
+   <figure><div class="im"><img src="img/t-adil.svg" alt="Adil Enzo, barbero de Broski" loading="lazy"></div><figcaption>Adil Enzo</figcaption></figure>
+   <figure><div class="im"><img src="img/t-cleber.svg" alt="Cleber, barbero de Broski" loading="lazy"></div><figcaption>Cleber</figcaption></figure>
+   <figure><div class="im"><img src="img/t-mounim.svg" alt="Mounim, barbero de Broski" loading="lazy" style="object-position:50% 30%"></div><figcaption>Mounim</figcaption></figure>
+   <figure><div class="im"><img src="img/t-bilal.svg" alt="Bilal, barbero de Broski" loading="lazy"></div><figcaption>Bilal</figcaption></figure>
+   <figure><div class="im"><img src="img/t-mohamed.svg" alt="Mohamed, barbero de Broski" loading="lazy"></div><figcaption>Mohamed</figcaption></figure>
+   <figure><div class="im"><img src="img/t-ayman.svg" alt="Ayman trabajando en Broski" loading="lazy"></div><figcaption>Ayman</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section id="trabajos" style="padding-top:0">
+ <div class="wrap">
+  <div class="eyebrow" data-i="gE">Trabajos reales</div>
+  <h2 data-i="gT">Hechos en Broski</h2>
+  <div class="gal">
+   <figure><img src="img/g2.svg" alt="Degradado en el local de Broski bajo las luces hexagonales" loading="lazy"></figure>
+   <figure><img src="img/g1.svg" alt="Corte de chico con degradado" loading="lazy"></figure>
+   <figure><img src="img/g3.svg" alt="Degradado alto con flequillo" loading="lazy"></figure>
+   <figure><img src="img/g7.svg" alt="Corte texturizado con degradado" loading="lazy"></figure>
+   <figure><img src="img/g8.svg" alt="Degradado con barba" loading="lazy"></figure>
+   <figure><img src="img/g4.svg" alt="Degradado con barba perfilada" loading="lazy"></figure>
+   <figure><img src="img/g5.svg" alt="Mullet con degradado" loading="lazy"></figure>
+   <figure><img src="img/g6.svg" alt="Corte de niño con raya" loading="lazy"></figure>
+   <figure class="m"><img src="img/g9.svg" alt="Barbero de Broski con mascarilla facial a un cliente" loading="lazy"></figure>
+  </div>
+  <a class="iglink" href="https://www.instagram.com/broski_barber24/" target="_blank" rel="noopener" data-i="ig">Más en Instagram @broski_barber24 →</a>
+ </div>
+</section>
+
+<section class="rev">
+ <div class="wrap">
+  <div class="eyebrow" data-i="rE">Reseñas</div>
+  <h2 data-i="rT">Lo que dicen los clientes</h2>
+  <div class="scores"><a href="https://booksy.com/es-es/100602_broski-barber_barberia_29244_fuengirola" target="_blank" rel="noopener"><b>5,0 ★</b><span>Booksy · 210</span></a><a href="https://www.google.com/maps/search/?api=1&query=broski%20barbershop%2C%20Cl.%20Jacinto%20Benavente%209%2C%2029640%20Fuengirola" target="_blank" rel="noopener"><b>4,9 ★</b><span>Google · 253</span></a></div>
+  <div class="quotes">
+   <blockquote><div class="st">★★★★★</div><p>“Es una barbería moderna y bonita, son cuidadosos, muy amables y se les ve con ganas de que salgas contento.”</p><cite>Francisco · Booksy</cite></blockquote>
+   <blockquote><div class="st">★★★★★</div><p>“Increíble el trato por parte de Adil, más que recomendable, profesional y amable, un 10/10”</p><cite>Eduardo · Booksy</cite></blockquote>
+   <blockquote><div class="st">★★★★★</div><p>“Cleber es muy bueno y es capaz de sugerir lo que necesitas, eso es un arte”</p><cite>Ramsés · Booksy</cite></blockquote>
+   <blockquote><div class="st">★★★★★</div><p>“Muy bien el servicio muy limpio todo mucha higiene un trato cordial y súper contento con el resultado”</p><cite>Mohamed · Booksy</cite></blockquote>
+   <blockquote><div class="st">★★★★★</div><p>“He ido a esta barbería cada dos semanas durante los últimos dos meses. Su servicio es impecable al 100 % y extremadamente profesional.”</p><cite>Albin · Booksy</cite></blockquote>
+   <blockquote><div class="st">★★★★★</div><p>“An excellent experience – my beard has been completely transformed! […] The barber was very professional, listened carefully to my wishes, and gave excellent recommendations.”</p><cite>Jyrki · Booksy</cite></blockquote>
+  </div>
+  <p class="note" data-i="rN">Reseñas reales de clientes verificados en Booksy, citadas tal cual.</p>
+ </div>
+</section>
+
+<section id="visita">
+ <div class="wrap visit">
+  <div>
+   <div class="eyebrow" data-i="vE">Cómo llegar</div>
+   <h2 data-i="vT">Te esperamos en Fuengirola</h2>
+   <dl>
+    <div><dt data-i="dA">Dirección</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=broski%20barbershop%2C%20Cl.%20Jacinto%20Benavente%209%2C%2029640%20Fuengirola" target="_blank" rel="noopener">Cl. Jacinto Benavente, 9, local B · 29640 Fuengirola (Málaga)</a></dd></div>
+    <div><dt data-i="dH">Horario</dt><dd class="hrs"><span data-i="h1">Lunes a sábado</span><span>10:00 – 21:00</span><span data-i="h2">Domingo</span><span data-i="h2v">Abierto desde las 10:00</span></dd></div>
+    <div><dt data-i="dC">Contacto</dt><dd><a class="wa-link" href="https://wa.me/34631111270" target="_blank" rel="noopener">WhatsApp +34 631 11 12 70</a> · <a href="https://www.instagram.com/broski_barber24/" target="_blank" rel="noopener">Instagram</a></dd></div>
+   </dl>
+   <div class="ctas">
+    <a class="btn bk" href="https://booksy.com/es-es/100602_broski-barber_barberia_29244_fuengirola" target="_blank" rel="noopener" data-i="cB2">Reservar en Booksy</a>
+    <a class="btn o wa-link" href="https://wa.me/34631111270" target="_blank" rel="noopener" data-i="cW2">Escribir por WhatsApp</a>
+   </div>
+  </div>
+  <iframe class="map" title="Mapa Broski Barber" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=G9RH%2B8M%20Fuengirola&z=17&hl=es&output=embed"></iframe>
+ </div>
+</section>
+
+<footer>
+ <img src="img/logo.svg" alt="Broski Barbers" loading="lazy">
+ <p>Cl. Jacinto Benavente, 9, local B · 29640 Fuengirola · <a class="wa-link" href="https://wa.me/34631111270" target="_blank" rel="noopener">+34 631 11 12 70</a></p>
+ <p style="margin-top:6px"><a href="https://www.instagram.com/broski_barber24/" target="_blank" rel="noopener">@broski_barber24</a></p>
+</footer>
+
+<div class="bar">
+ <a class="bk" href="https://booksy.com/es-es/100602_broski-barber_barberia_29244_fuengirola" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg><span>Booksy</span></a>
+ <a class="wa wa-link" href="https://wa.me/34631111270" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.8.4 3.6 3.6 0 0 0-1.1 2.6 6.2 6.2 0 0 0 1.3 3.3 14.3 14.3 0 0 0 5.5 4.8c2 .9 2.8.9 3.8.8a3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4M12 21.8a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8M20.5 3.5A11.8 11.8 0 0 0 1.9 17.7L.2 24l6.4-1.7A11.8 11.8 0 0 0 23.8 12a11.7 11.7 0 0 0-3.4-8.4"/></svg><span>WhatsApp</span></a>
 </div>
-<div class="ph"><img src="img/intro.svg" alt="Pompadour y barba en Broski barber" loading="lazy"></div></div></section>
-<section class="svc" id="servicios"><div class="wrap sec"><div class="eyebrow">Servicios</div>
-<h2>Cortes, barba y facial</h2>
-<div class="cards c3"><div class="card"><img src="img/c1.svg" alt="Degradado en Broski barber" loading="lazy"><div><h3>Corte degradado</h3><p>Lavado, corte de cualquier estilo, perfilados y peinado. 15 € · 35 min.</p></div></div><div class="card"><img src="img/c2.svg" alt="Corte y barba en Broski" loading="lazy"><div><h3>Corte y barba</h3><p>Corte de pelo, peinado y arreglo de barba completa. 20 € · 45 min.</p></div></div><div class="card"><img src="img/c3.svg" alt="Tratamiento facial en Broski" loading="lazy"><div><h3>Facial y extras</h3><p>Black mask 10 €. Cejas con hilo 6 €. Colorante de barba 13 €.</p></div></div></div>
-<ul class="list"><li>Corte de niños (hasta 10 años) 13 €</li><li>Arreglo de barba desde 13 €</li><li>Servicio VIP (corte, barba y facial) 30 €</li><li>Servicio VIP Premium 40 €</li><li>Limpieza facial premium 25 €</li></ul>
-</div></section>
-<section id="trabajos"><div class="wrap sec"><div class="eyebrow">Trabajos reales</div><h2>Cortes del salón</h2>
-<div class="gal"><figure><img src="img/g1.svg" alt="Degradado en el sillón de Broski" loading="lazy"></figure><figure><img src="img/g2.svg" alt="Perfil con barba en Broski" loading="lazy"></figure><figure><img src="img/g3.svg" alt="Pompadour y gafas" loading="lazy"></figure><figure><img src="img/g4.svg" alt="Corte de niño en Broski" loading="lazy"></figure><figure><img src="img/intro.svg" alt="Estilo con volumen en Broski" loading="lazy"></figure><figure><img src="img/hero.svg" alt="El interior de Broski barber" loading="lazy"></figure></div>
 
-</div></section>
-
-
-<section id="visita"><div class="wrap visit"><div><div class="eyebrow">Contacto</div>
-<h2 style="font-size:clamp(2.1rem,5vw,3.2rem);margin:10px 0 26px">Te esperamos en Fuengirola</h2>
-<dl><div><dt>Dirección</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=Broski%20barber%2C%20Calle%20Jacinto%20Benavente%209%2C%2029640%20Fuengirola" target="_blank" rel="noopener">Calle Jacinto Benavente, 9, local B<br>29640 Fuengirola</a></dd></div>
-<div><dt>Horario</dt><dd>Todos los días 10:00–21:00</dd></div>
-<div><dt>Contacto</dt><dd><a href="tel:+34631111270">+34 631 11 12 70</a></dd></div></dl>
-<a class="btn d" href="https://wa.me/34631111270?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20quiero%20pedir%20cita%20en%20Broski%20barber." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span>Pedir cita por WhatsApp</span></a></div>
-<iframe class="map" loading="lazy" title="Mapa" src="https://maps.google.com/maps?q=36.540777080829606%2C-4.620815451141896&z=16&output=embed"></iframe></div></section>
-<footer><div class="logo">BROSKI<small>BARBER · FUENGIROLA</small></div>
-<p>C. Jacinto Benavente, 9, loc. B · 29640 Fuengirola</p>
-<p style="margin-top:8px">© 2026 Broski barber</p></footer>
-<div class="bar"><a href="tel:+34631111270">Llamar</a>
-<a href="https://www.google.com/maps/search/?api=1&query=Broski%20barber%2C%20Calle%20Jacinto%20Benavente%209%2C%2029640%20Fuengirola" target="_blank" rel="noopener">Cómo llegar</a>
-<a class="wa" href="https://wa.me/34631111270?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20quiero%20pedir%20cita%20en%20Broski%20barber." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span>Cita · WhatsApp</span></a></div>
-<script>const h=document.getElementById('top');addEventListener('scroll',()=>h.classList.toggle('s',scrollY>60),{passive:true});</script>
-</body></html>
+<script>
+const T={en:{nS:"Services",nT:"Team",nV:"Find us",hB:"Book",hE:"Barbershop · Fuengirola",hT1:"Fades, beards",hT2:"and style.",hP:"Fades, haircut & beard, kids' cuts and facials at Cl. Jacinto Benavente 9, Fuengirola. Open every day.",cB:"Book on Booksy",cW:"WhatsApp",aE:"The barbershop",aT:"Your barbershop in central Fuengirola",aP:"Six barbers, a modern, well-kept shop and cuts in any style: fades, line-ups, beards, beard colouring and facials. Book online on Booksy or message us on WhatsApp.",s1:"210 on Booksy",s2:"253 on Google",s3:"Every day",f1:"Card payment",f2:"Wi-Fi",f3:"Kid-friendly",f4:"Accessible",f5:"Loyalty programme",f6:"Pets welcome",sE:"Services & prices",sT:"What we do",k1:"Fade",k1p:"from 15 €",k2:"Cut & beard",k3:"Kids",k4:"Facial",k4p:"from 10 €",g1:"Haircuts",i1:"Fade haircut",i1p:"Wash and full cut in any style, line-up and styling.",i2:"Haircut & beard",i2p:"Haircut and styling with a full beard trim.",i3:"Kids' haircut",i3p:"Up to 10 years old.",g2:"Beard & brows",i4:"Beard grooming",i4x:"from 13 €",i4p:"Trim, line-up and products: aftershave, oil or hold.",i5:"Beard colouring",i5p:"Covers grey hairs for a fuller-looking beard.",i6:"Eyebrow threading",g3:"Facial & VIP",i7p:"Haircut, beard trim and full facial cleanse with ozone steam and blackhead extraction.",i8p:"Haircut, beard trim and facial cleanse with hydrating masks.",i9:"Premium facial cleanse",i9p:"Deep cleanse, exfoliation and extraction.",i10p:"Exfoliating foam, hot towel, massage, face mask and eye patches.",i11:"Black mask",i11p:"Hot towel and a black peel-off mask against blackheads.",pn:"Prices and durations as listed on Booksy.",pnl:"See free slots →",tE:"The team",tT:"Your barbers",tP:"Pick who you want when you book on Booksy.",gE:"Real work",gT:"Made at Broski",ig:"More on Instagram @broski_barber24 →",rE:"Reviews",rT:"What clients say",rN:"Real reviews from verified Booksy clients, quoted verbatim.",vE:"Find us",vT:"See you in Fuengirola",dA:"Address",dH:"Opening hours",h1:"Monday to Saturday",h2:"Sunday",h2v:"Open from 10:00",dC:"Contact",cB2:"Book on Booksy",cW2:"Message on WhatsApp"}};
+const M={es:"Hola Broski, he visto vuestra web y quiero pedir cita. ¿Qué hueco tenéis?",en:"Hi Broski, I saw your website and I'd like to book a cut. What times do you have?"};
+const ES={};document.querySelectorAll('[data-i]').forEach(e=>ES[e.dataset.i]=e.textContent);T.es=ES;
+function setL(l){document.documentElement.lang=l;document.querySelectorAll('[data-i]').forEach(e=>{const v=T[l][e.dataset.i];if(v)e.textContent=v});
+document.querySelectorAll('.wa-link').forEach(a=>a.href="https://wa.me/34631111270?text="+encodeURIComponent(M[l]));
+bES.classList.toggle('on',l=='es');bEN.classList.toggle('on',l=='en');try{localStorage.broskiLang=l}catch(e){}}
+setL((()=>{try{return localStorage.broskiLang}catch(e){}})()||((navigator.language||'es').startsWith('es')?'es':'en'));
+const h=document.getElementById('top');addEventListener('scroll',()=>h.classList.toggle('s',scrollY>60),{passive:true});
+</script>
+</body>
+</html>
